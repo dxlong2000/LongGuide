@@ -5,32 +5,18 @@ import json
 import argparse
 from pathlib import Path
 from longguide import LongGuideGenerator
+from standardize_data import standardize_dataset
 
-def standardize_data(data, dataset_name):
-    """Standardize dataset to input/output format"""
-    standardized = []
-    
-    for item in data:
-        if dataset_name == "SAMSum":
-            standardized.append({"input": item["dialogue"], "output": item["summary"]})
-        elif dataset_name == "CNN":
-            standardized.append({"input": item["article"], "output": item["highlights"]})
-        elif dataset_name == "xlsum":
-            standardized.append({"input": item["text"], "output": item["target"]})
-        elif dataset_name == "SWiPE":
-            standardized.append({"input": item["r_content"], "output": item["s_content"]})
-        elif dataset_name == "IWSLT":
-            standardized.append({"input": item["translation"]["en"], "output": item["translation"]["ja"]})
-        elif dataset_name == "CommonGen":
-            concepts_str = ", ".join(item["concepts"])
-            standardized.append({"input": concepts_str, "output": item["target"]})
-        elif dataset_name == "SyntheticDialogue":
-            standardized.append({"input": item.get("context", item.get("prompt", "")), "output": item.get("response", item.get("dialogue", ""))})
-        else:
-            # Assume already standardized
-            standardized.append(item)
-    
-    return standardized
+def get_data_path(task_type):
+    """Map task type to dataset path"""
+    task_to_dataset = {
+        "summarization": "data/SAMSum",  # or CNN, xlsum
+        "translation": "data/IWSLT", 
+        "text_simplification": "data/SWiPE",
+        "concept_to_text": "data/CommonGen",
+        "dialogue_generation": "data/SyntheticDialogue"
+    }
+    return task_to_dataset.get(task_type, "data/SAMSum")
 
 def load_config(config_path):
     """Load configuration from YAML file"""
@@ -48,20 +34,18 @@ def load_dataset(data_path):
             file_data = json.load(f)
             data.extend(file_data)
     
-    # Standardize the data
-    data = standardize_data(data, dataset_name)
+    # Use existing standardization
+    temp_file = f"temp_{dataset_name}.json"
+    with open(temp_file, 'w') as f:
+        json.dump(data, f)
+    
+    standardize_dataset(dataset_name, temp_file)
+    
+    with open(temp_file, 'r') as f:
+        data = json.load(f)
+    
+    Path(temp_file).unlink()
     return data
-
-def get_data_path(task_type):
-    """Map task type to dataset path"""
-    task_to_dataset = {
-        "summarization": "data/SAMSum",  # or CNN, xlsum
-        "translation": "data/IWSLT", 
-        "text_simplification": "data/SWiPE",
-        "concept_to_text": "data/CommonGen",
-        "dialogue_generation": "data/SyntheticDialogue"
-    }
-    return task_to_dataset.get(task_type, "data/SAMSum")
 
 def run_longguide(config_path):
     """Run LongGuide with specified configuration"""
