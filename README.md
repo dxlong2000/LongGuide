@@ -46,18 +46,6 @@ python evaluate.py --results outputs/results_summarization.json --task summariza
 python evaluate.py --results outputs/results_translation.json --task translation
 ```
 
-## Configuration
-
-Edit `configs/default.yaml`:
-
-```yaml
-# Model Configuration
-model_name: "gpt-3.5-turbo"
-api_key: "your-openai-api-key-here"
-
-task_type: "summarization"  # summarization, translation, text_simplification, concept_to_text, dialogue_generation
-```
-
 ## Supported Datasets
 
 - **SAMSum**: Dialogue summarization
