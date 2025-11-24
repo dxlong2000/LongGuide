@@ -6,6 +6,19 @@ Official codes for ACL 2025 Findings paper "Beyond In-Context Learning: Aligning
 
 ## Quick Start
 
+### Configuration
+
+Edit `configs/default.yaml`:
+
+```yaml
+# Model Configuration
+model_name: "gpt-3.5-turbo"
+api_key: "your-openai-api-key-here"
+
+# Task Configuration
+task_type: "summarization"  # summarization, translation, dialogue generation, table-to-text generation, text simplification
+```
+
 ### Installation
 
 ```bash
@@ -26,7 +39,7 @@ python run.py --config configs/custom.yaml
 ### Evaluation
 
 ```bash
-# Evaluate summarization results
+# Evaluate cnn results
 python evaluate.py --results outputs/results_summarization.json --task summarization
 
 # Evaluate translation results  
@@ -42,7 +55,7 @@ Edit `configs/default.yaml`:
 model_name: "gpt-3.5-turbo"
 api_key: "your-openai-api-key-here"
 
-task_type: "summarization"  # summarization, translation, story_generation, dialogue_generation
+task_type: "summarization"  # summarization, translation, text_simplification, concept_to_text, dialogue_generation
 ```
 
 ## Supported Datasets

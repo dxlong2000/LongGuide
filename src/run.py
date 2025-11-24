@@ -9,12 +9,13 @@ from standardize_data import standardize_dataset
 
 def get_data_path(task_type):
     """Map task type to dataset path"""
+    # summarization, translation, dialogue generation, table-to-text generation, text simplification
     task_to_dataset = {
-        "summarization": "data/SAMSum",  # or CNN, xlsum
+        "summarization": "data/SAMSum", # Can be CNN/xlsum/SAMSum
         "translation": "data/IWSLT", 
-        "text_simplification": "data/SWiPE",
-        "concept_to_text": "data/CommonGen",
-        "dialogue_generation": "data/SyntheticDialogue"
+        "text simplification": "data/SWiPE",
+        "table-to-text generation": "data/CommonGen",
+        "dialogue generation": "data/SyntheticDialogue",
     }
     return task_to_dataset.get(task_type, "data/SAMSum")
 
