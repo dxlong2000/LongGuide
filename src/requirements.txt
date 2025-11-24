@@ -1,0 +1,13 @@
+# LLM clients
+openai>=1.0.0
+
+# Text processing
+nltk>=3.8.0
+
+# Utilities
+tqdm>=4.65.0
+
+# Development dependencies
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0

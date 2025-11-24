@@ -1,0 +1,802 @@
+[
+  {
+    "input": "Hannah: Hey, do you have Betty's number?\nAmanda: Lemme check\nHannah: <file_gif>\nAmanda: Sorry, can't find it.\nAmanda: Ask Larry\nAmanda: He called her last time we were at the park together\nHannah: I don't know him well\nHannah: <file_gif>\nAmanda: Don't be shy, he's very nice\nHannah: If you say so..\nHannah: I'd rather you texted him\nAmanda: Just text him 🙂\nHannah: Urgh.. Alright\nHannah: Bye\nAmanda: Bye bye",
+    "output": "Hannah needs Betty's number but Amanda doesn't have it. She needs to contact Larry."
+  },
+  {
+    "input": "Eric: MACHINE!\nRob: That's so gr8!\nEric: I know! And shows how Americans see Russian ;)\nRob: And it's really funny!\nEric: I know! I especially like the train part!\nRob: Hahaha! No one talks to the machine like that!\nEric: Is this his only stand-up?\nRob: Idk. I'll check.\nEric: Sure.\nRob: Turns out no! There are some of his stand-ups on youtube.\nEric: Gr8! I'll watch them now!\nRob: Me too!\nEric: MACHINE!\nRob: MACHINE!\nEric: TTYL?\nRob: Sure :)",
+    "output": "Eric and Rob are going to watch a stand-up on youtube."
+  },
+  {
+    "input": "Lenny: Babe, can you help me with something?\nBob: Sure, what's up?\nLenny: Which one should I pick?\nBob: Send me photos\nLenny:  <file_photo>\nLenny:  <file_photo>\nLenny:  <file_photo>\nBob: I like the first ones best\nLenny: But I already have purple trousers. Does it make sense to have two pairs?\nBob: I have four black pairs :D :D\nLenny: yeah, but shouldn't I pick a different color?\nBob: what matters is what you'll give you the most outfit options\nLenny: So I guess I'll buy the first or the third pair then\nBob: Pick the best quality then\nLenny: ur right, thx\nBob: no prob :)",
+    "output": "Lenny can't decide which trousers to buy. Bob advised Lenny on that topic. Lenny goes with Bob's advice to pick the trousers that are of best quality."
+  },
+  {
+    "input": "Will: hey babe, what do you want for dinner tonight?\nEmma:  gah, don't even worry about it tonight\nWill: what do you mean? everything ok?\nEmma: not really, but it's ok, don't worry about cooking though, I'm not hungry\nWill: Well what time will you be home?\nEmma: soon, hopefully\nWill: you sure? Maybe you want me to pick you up?\nEmma: no no it's alright. I'll be home soon, i'll tell you when I get home. \nWill: Alright, love you. \nEmma: love you too. ",
+    "output": "Emma will be home soon and she will let Will know."
+  },
+  {
+    "input": "Ollie: Hi , are you in Warsaw\nJane: yes, just back! Btw are you free for diner the 19th?\nOllie: nope!\nJane: and the  18th?\nOllie: nope, we have this party and you must be there, remember?\nJane: oh right! i lost my calendar..  thanks for reminding me\nOllie: we have lunch this week?\nJane: with pleasure!\nOllie: friday?\nJane: ok\nJane: what do you mean \" we don't have any more whisky!\" lol..\nOllie: what!!!\nJane: you just call me and the all thing i heard was that sentence about whisky... what's wrong with you?\nOllie: oh oh... very strange! i have to be carefull may be there is some spy in my mobile! lol\nJane: dont' worry, we'll check on friday.\nOllie: don't forget to bring some sun with you\nJane: I can't wait to be in Morocco..\nOllie: enjoy and see you friday\nJane: sorry Ollie, i'm very busy, i won't have time for lunch  tomorrow, but may be at 6pm after my courses?this trip to Morocco was so nice, but time consuming!\nOllie: ok for tea!\nJane: I'm on my way..\nOllie: tea is ready, did you bring the pastries?\nJane: I already ate them all... see you in a minute\nOllie: ok",
+    "output": "Jane is in Warsaw. Ollie and Jane has a party. Jane lost her calendar. They will get a lunch this week on Friday. Ollie accidentally called Jane and talked about whisky. Jane cancels lunch. They'll meet for a tea at 6 pm."
+  },
+  {
+    "input": "Benjamin: Hey guys, what are we doing with the keys today?\nHilary: I've got them. Whoever wants them can meet me at lunchtime or after\nElliot: I'm ok. We're meeting for the drinks in the evening anyway and I guess we'll be going back to the apartment together?\nHilary: Yeah, I guess so\nDaniel: I'm with Hilary atm and won't let go of her for the rest of the day, so any option you guys choose is good for me\nBenjamin: Hmm I might actually pass by at lunchtime, take the keys and go take a nap. I'm sooo tired after yesterday\nHilary: Sounds good. We'll be having lunch with some French people (the ones who work on the history of food in colonial Mexico - I already see you yawning your head off)\nBenjamin: YAAAAWN 🙊 Where and where are you meeting?\nHilary: So I'm meeting them at the entrance to the conference hall at 2 pm and then we'll head to this place called La Cantina. Italian cuisine, which is quite funny, but that's what they've chosen\nBenjamin: Interesting 😱 To be honest, Hilary, I almost feel like changing my mind. Wanting to take this nap might end up costing me to dear\nHilary: Oh come on 😂\nBenjamin: All these terrible obstacles on mu way to bed might just prove to much to take\nHilary: We'll try to avoid talking about their subject of research. Oh wait, no, I'm actually meeting them because I wanted to chat about their research lol\nElliot: 🙉\nHilary: Do join us, we're going to have fun. And then you'll take the keys and take this most deserved of naps\nElliot: Sounds like a plan 😂\nHilary: 😎\nElliot: See you at 2 then xx",
+    "output": "Hilary has the keys to the apartment. Benjamin wants to get them and go take a nap. Hilary is having lunch with some French people at La Cantina. Hilary is meeting them at the entrance to the conference hall at 2 pm. Benjamin and Elliot might join them. They're meeting for the drinks in the evening."
+  },
+  {
+    "input": "Max: Know any good sites to buy clothes from?\nPayton: Sure :) <file_other> <file_other> <file_other> <file_other> <file_other> <file_other> <file_other>\nMax: That's a lot of them!\nPayton: Yeah, but they have different things so I usually buy things from 2 or 3 of them.\nMax: I'll check them out. Thanks. \nPayton: No problem :)\nMax: How about u?\nPayton: What about me?\nMax: Do u like shopping?\nPayton: Yes and no.\nMax: How come?\nPayton: I like browsing, trying on, looking in the mirror and seeing how I look, but not always buying.\nMax: Y not?\nPayton: Isn't it obvious? ;)\nMax: Sry ;)\nPayton: If I bought everything I liked, I'd have nothing left to live on ;)\nMax: Same here, but probably different category ;)\nPayton: Lol\nMax: So what do u usually buy?\nPayton: Well, I have 2 things I must struggle to resist!\nMax: Which are?\nPayton: Clothes, ofc ;)\nMax: Right. And the second one?\nPayton: Books. I absolutely love reading!\nMax: Gr8! What books do u read?\nPayton: Everything I can get my hands on :)\nMax: Srsly?\nPayton: Yup :)",
+    "output": "Payton provides Max with websites selling clothes. Payton likes browsing and trying on the clothes but not necessarily buying them. Payton usually buys clothes and books as he loves reading."
+  },
+  {
+    "input": "Rita: I'm so bloody tired. Falling asleep at work. :-(\nTina: I know what you mean.\nTina: I keep on nodding off at my keyboard hoping that the boss doesn't notice..\nRita: The time just keeps on dragging on and on and on.... \nRita: I keep on looking at the clock and there's still 4 hours of this drudgery to go.\nTina: Times like these I really hate my work.\nRita: I'm really not cut out for this level of boredom.\nTina: Neither am I.",
+    "output": "Rita and Tina are bored at work and have still 4 hours left."
+  },
+  {
+    "input": "Beatrice: I am in town, shopping. They have nice scarfs in the shop next to the church. Do you want one?\nLeo: No, thanks\nBeatrice: But you don't have a scarf.\nLeo: Because I don't need it.\nBeatrice: Last winter you had a cold all the time. A scarf could help.\nLeo: I don't like them.\nBeatrice: Actually, I don't care. You will get a scarf.\nLeo: How understanding of you!\nBeatrice: You were complaining the whole winter that you're going to die. I've had enough.\nLeo: Eh.",
+    "output": "Beatrice wants to buy Leo a scarf, but he doesn't like scarves. She cares about his health and will buy him a scarf no matter his opinion."
+  },
+  {
+    "input": "Ivan: hey eric\nEric: yeah man\nIvan: so youre coming to the wedding\nEric: your brother's\nIvan: yea\nEric: i dont know mannn\nIvan: YOU DONT KNOW??\nEric: i just have a lot to do at home, plus i dont know if my parents would let me\nIvan: ill take care of your parents\nEric: youre telling me you have the guts to talk to them XD\nIvan: thats my problem\nEric: okay man, if you say so\nIvan: yea just be there \nEric: alright",
+    "output": "Eric doesn't know if his parents let him go to Ivan's brother's wedding. Ivan will talk to them."
+  },
+  {
+    "input": "Wanda: Let's make a party!\nGina: Why?\nWanda: beacuse. I want some fun!\nGina: ok, what do u need?\nWanda: 1st I need too make a list\nGina: noted and then?\nWanda: well, could u take yours father car and go do groceries with me?\nGina: don't know if he'll agree\nWanda: I know, but u can ask :)\nGina: I'll try but theres no promisess\nWanda: I know, u r the best!\nGina: When u wanna go\nWanda: Friday?\nGina: ok, I'll ask",
+    "output": "Wanda wants to throw a party. She asks Gina to borrow her father's car and go do groceries together. They set the date for Friday. "
+  },
+  {
+    "input": "Martin: I won two cinema tickets!\nAggie: oh cool, how come?\nMartin: online. on fb, the movie mag organized it\nAggie: so what did you do\nMartin: just write a short review and that's it\nAggie: well done :) so what and when. and where?\nMartin: the new film with Redford\nAggie: i guess i heard sth\nMartin: it's pretty cool i heard. till the end of the week\nAggie: sounds good. we'll find time XD",
+    "output": "Martin wrote a short review and won 2 cinema tickets on FB. Martin wants Aggie to go with him this week for the new film with Redford."
+  },
+  {
+    "input": "Charlee: I'm in class. Theatre in Portuguese lol\nCurtis: Realllly?\nCharlee: Yes. One of my subjects at the university that I attend is portuguese theatre. We are preparing a performance\nCurtis: What performance is this? Are you devising it?\nCharlee: A polish one translated into portuguese\nCurtis: Thats quite cool. Who is the writer?\nCharlee: Mrożek",
+    "output": "Charlee is attending Portuguese theater as a subject at university. He and other students are preparing a play by Mrożek translated into Portuguese."
+  },
+  {
+    "input": "Mary: Are you going by car or train?\nTom: Ella rented a car\nElla: this makes all of this much faster\nMary: good decision",
+    "output": "Ella rented a car, this makes things much faster for her and Tom. "
+  },
+  {
+    "input": "Luke: are you still looking for someone to join netflix family?\nPaul: yes, 1 person :)\nLuke: i am the one!\nPaul: sure, i will send you the login and password on sunday\nLuke: ok we can talk tomorrow\nPaul: i don't really remember it now\nLuke: send me also the bank account details so I can wire you the money every month. Are you paying for this or someone else?\nPaul: I do, and I keep track of everyone accessing so you should not expect any bans :D\nLuke: easy mate :D you still on holidays with your girl?\nPaul: last dinner :( tomorrow we are out\nLuke: how long have you been there?\nPaul: less than 8 days :/",
+    "output": "Paul is going to share his Netflix account with Luke. In exchange Luke is going to contribute to the subscription. Paul will send Luke his bank details. Paul is on vacation with his girlfriend till tomorrow."
+  },
+  {
+    "input": "Greg: Hi, honey. I need to stay after hours :-(\nBetsy: Again?\nGreg: I'm sorry!\nBetsy: What about Johnny?\nGreg: Well, could you pick him up? \nBetsy: What if I can't?\nGreg: Betsy?\nBetsy: What if I can't?\nGreg: Can't you, really?\nBetsy: I can't. Today I need to work long hours as well. Tuesdays are your days in the kindergarten.\nGreg: Talk to you later. I'll see what I can do.\nBetsy: You'd better think of something.\nGreg: Oh. Just stop it now.",
+    "output": "Greg and Betsy have a lot of work today, so they cannot pick up Johnny from the kindergarten. However, it's Greg's turn to do it. Greg will try to find a solution."
+  },
+  {
+    "input": "Ethan: somethin for Scott <file_photo>\nToby: haha, totally\nMarshall: pretty much sums it up\nScott: you know you're exactly fuckin the same\nToby: oh we know honey bunny\nMarshall: we just enjoy making fun of YOU\nEthan: xD\nScott: oh fuck y'all\nToby: <file_gif>",
+    "output": "Ethan, Toby and Marshall are making fun of Scott."
+  },
+  {
+    "input": "Igor: Shit, I've got so much to do at work and I'm so demotivated. \nJohn: It's pretty irresponsible to give that much work to someone on their notice period.\nIgor: Yeah, exactly! Should I even care?\nJohn: It's up to you, but you know what they say...\nIgor: What do you mean?\nJohn: Well, they say how you end things shows how you really are...\nIgor: And now how you start, right?\nJohn: Gotcha! \nIgor: So what shall I do then? \nJohn: It's only two weeks left, so grit your teeth and do what you have to do. \nIgor: Easy to say, hard to perform.\nJohn: Come on, stop thinking, start doing! \nIgor: That's so typical of you!  ;)  ",
+    "output": "Igor has a lot of work on his notice period and he feels demotivated. John thinks he should do what he has to do nevertheless. "
+  },
+  {
+    "input": "Clara: Hi, what you up to?\nNeela: Not much, chilling out.\nClara: Just rewatching Dear White People on Netflix, love it!😍\nNeela: Oh yeah, heard of it, but not seen it yet? Any good?\nClara: Well, yes! I just said it was, LOL. It's about a fictional Ivy League University and the students in one House of Residence.\nNeela: Why is it called Dear White People?\nClara: That's the name of the radio show the main character, Sam, presents on college radio.\nNeela: Yeah, but why is it so good?\nClara: Well, it's mainly stories from the perspective of black students there, which I find very interesting. The characters are strong and likeable too.\nNeela: I suppose it's rather different from the UK, then?\nClara: It seems so, as there is a lot more racial awareness and discrimination there than here. It all kicks off when there is a Blackface party held by an elite group of white students, which gets out of hand.\nNeela: How's that?\nClara: Well, obviously, the black students try to break it up and there's also an incident where one guy, Reggie, gets a loaded gun pointed at him by a campus policeman after he gets into an argument with a white student. It may be at another party, though, I'm not sure of that.\nNeela: Oh, that sounds pretty strong stuff. What else happens?\nClara: Well, there is a young black guy called Lionel who is coming to terms with being gay and is finding his voice as a journalist. He unearths corruption at the uni and he and Sam also uncover some conspiracy theory stuff about secret societies.\nNeela: Well, I must say, it does sound good, I'll check it out soon!\nClara: Definitely, there is supposed to be a Series 3 coming up next year, really looking forward to it!\nNeela: Well, thanks Clara, I'm just watching the rest of a movie and I'll try Dear White People.\nClara: Don't blame me if you get hooked and stay up till 4!\nNeela: See ya, love!\nClara: Bye!",
+    "output": "Clara is rewatching Dear White People and strongly recommends it to Neela."
+  },
+  {
+    "input": "Ernest: hey Mike, did you park your car on our street?\nMike: no, took it into garage today\nErnest: ok good\nMike: why?\nErnest: someone just crashed into a red honda looking just like yours\nMike: lol lucky me",
+    "output": "Mike took his car into garage today. Ernest is relieved as someone had just crashed into a red Honda which looks like Mike's. "
+  },
+  {
+    "input": "Deirdre: Hi Beth, how are you love?\nBeth: Hi Auntie Deirdre, I'm been meaning to message you, had a favour to ask.\nDeirdre: Wondered if you had any thought about your Mum's 40th, we've got to do something special!\nBeth: How about a girls weekend, just mum, me, you and the girls, Kira will have to come back from Uni, of course.\nDeirdre: Sounds fab! Get your thinking cap on, it's only in 6 weeks! Bet she's dreading it, I remember doing that!\nBeth: Oh yeah, we had a surprise party for you, you nearly had a heart attack! \nDeirdre: Well, it was a lovely surprise! Gosh, thats nearly 4 years ago now, time flies! What was the favour, darling?\nBeth: Oh, it was just that I fancied trying a bit of work experience in the salon, auntie.\nDeirdre: Well, I am looking for Saturday girls, are you sure about it? you could do well in the exams and go on to college or 6th form.\nBeth: I know, but it's not for me, auntie, I am doing all foundation papers and I'm struggling with those.\nDeirdre: What about a tutor? Kira could help you in the hols.\nBeth: Maybe, but I'd like to try working. I'm 16 soon, I'm old enough.\nDeirdre: I know. Look, pop in tomorrow after school and we'll have a cuppa and a chat.\nBeth: Yes, thanks auntie. I'd really like to try the beauty therapy side.\nDeirdre: Its not for the squeamish, mind. Massage, pedicures, not to mention waxing!\nBeth: Oh yes, I was chatting to a friend about it yesterday!\nDeirdre: Maxine manages the beauty side, you can meet her tomorrow and we'll see how it goes.\nBeth: Yes, I'd really like that. \nDeirdre: We can try a few hours on a Saturday for a couple of weeks as work experience. I'll give you a tenner or so per session to start off for your lunch, coffee and bus fare etc. If you like, we'll take it from there.\nBeth: OK, I like the sound of it! See you tomorrow Auntie! Love you!\nDeirdre: Bye, lovely girl! Xx",
+    "output": "Beth wants to organize a girls weekend to celebrate her mother's 40th birthday. She also wants to work at Deidre's beauty salon. Deidre offers her a few hours on Saturdays as work experience. They set up for a meeting tomorrow."
+  },
+  {
+    "input": "Gloria: This exam is a bit of a lottery in fact\nGloria: You can't really get prepared, it's all about experience\nEmma: But there are some rules and some typical texts right?\nGloria: You can see some texts from previous years\nGloria: <file_other>\nEmma: Wow that's very useful\nEmma: I have never seen this site\nGloria: Yes it's very good\nGloria: Actually it's good to read all the texts because you will see that some phrases repeat very often\nEmma: How much time do you have for all 4 parts?\nGloria: 4 hours\nEmma: Is it enough?\nGloria: Well it has to be\nGloria: Would be perfect to have 2 more hours... But on the other hand it would be really exhausting\nEmma: 4 hours and no breaks?\nGloria: No breaks :/ So it's really important to be really focused and try to write as fast as you can\nGloria: And read it carefully and correct during the last hour\nEmma: I'm going to read everything from that website, it's great",
+    "output": "Gloria has an exam soon. It lasts 4 hours. Emma sent her a link to a website with some texts from previous years so that she can prepare for the exam better."
+  },
+  {
+    "input": "Adam: Have you talked to May?\nKaren: Yes, yesterday, why?\nAdam: I just talked to her and I must admit I worry about her\nKaren: Me too, I suggested she should see a specialist, but she wasn't very happy about it\nAdam: No wonder...\nKaren: I know, but I think this is serious. She's saying she's depressed, like everyone around, but in her case it may be true\nAdam: She was telling me she doesn't feel like doing anything, she's bored all the time, she never feels happy. It sounds like a real, typical depression\nAdam: She also told me that she has trouble sleeping. I asked her to go out for a beer or anything basically, but she doesn't want to leave the flat\nKaren: Oh my, it sounds really serious. I don't what to tell you\nAdam: I was wondering how I can help her\nKaren: Honestly I don't know if we can help her, Adam. I suggested a specialist because these are very sensitive issues and I'm afraid we may unintentionally make it worse\nAdam: Yes, but she doesn't want to see a specialist. Basically, she doesn't want to see anyone\nKaren: Hm... I don't know... How about I call someone for advice? So we could know what to do\nAdam: Sounds rational, do you know anyone you could call? Don't mention her name\nKaren: Of course I won't! I have a friend who's a psychologist, we can trust her. I'll let you know\nAdam: Thank you Karen!",
+    "output": "Adam and Karen are worried that May suffers from depression. Karen will call her friend who is a psychologist and ask for advice. "
+  },
+  {
+    "input": "Anne: You were right, he was lying to me :/\nIrene: Oh no, what happened?\nJane: who? that Mark guy?\nAnne: yeah, he told me he's 30, today I saw his passport - he's 40\nIrene: You sure it's so important?\nAnne: he lied to me Irene",
+    "output": "Mark lied to Anne about his age. Mark is 40."
+  },
+  {
+    "input": "Augustine: Guys, remember it's Wharton's bday next week?\nDarlene: yay, a party!\nHeather: yay! crap we need to buy him a present\nWalker: he mentioned paper shredder once\nAugustine: wtf?!?\nWalker: he did really. for no reason at all.\nHeather: whatever that make him happy\nDarlene: cool with me. we can shred some papers at the party \nAugustine: so much fun\nHeather: srsly guys, you mean we should really get office equipment???\nDarlene: Walk, ask him if he really wnts it and if he yes then we get it\nWalker: i heard him say that. wasn;t drunk. me neither.\nDarlene: but better ask him twice\nWalker: will do\nAugustine: 2moro ok?\nDarlene: and sure ask ab the party!",
+    "output": "Next week is Wharton's birthday. Augustine, Darlene, Heather and Walker want to buy him a paper shredder. Walker will make sure if Wharton really wants it. "
+  },
+  {
+    "input": "Ollie: Okay, Kelly! Ur up nxt!\nKelly: Me? I don't wanna.\nMickey: C'mon!\nJessica: Yeah! What's yours?\nKelly: Fine. It's a sculpture garden in Finnland.\nOllie: What's scary about sculptures? Wait! Do they resemble vampires and stuff?\nMickey: Nah, I'm sure they look rly nice.\nKelly: It's not the sculptures, it's the amount of them and their faces!\nJessica: Faces? What faces?\nKelly: Well, they resemble ppl in different activities like hugging, training, doing sport and so on. But the faces are just morbid and there's like a hundred of them. All staring at you!\nOllie: Another one?\nMickey: Certainly!\nJessica: Well, Ollie, ur turn!\nOllie: Nagoro village in Japan!\nMickey: Y?\nOllie: Well, maybe it's not scary, but it similar to Kelly's place. It's just creepy as hell.\nJessica: Bt y?\nOllie: Imagine a village with ppl living in it. And in the same village u have these human-sized figures. And there's more of them than the ppl that actually live there!\nKelly: Creepy AH!\nMickey: WTF?! Y would ppl even do that?\nJessica: Idk. Idc. Never. Going. There.\nOllie: See! Mine was the worst!\nJessica: Bt not the scariest!\nOllie: Point taken.\nMickey: Listen, guys, fun talking to u, bt gotta go. \nKelly: Yeah, me too. Bye!\nJessica: Bye!\nOllie: Cu!",
+    "output": "Kelly is scared of sculpture garden figures in Finnland, she finds figure's faces morbid. For Ollie it's Nagoro village in Japan, it's creepy. "
+  },
+  {
+    "input": "Myah: <file_photo>\nSelah: I can't see the phone number very well. Rewrite it plz\nMyah: <file_photo>\nSelah: The phone of that person is off",
+    "output": "Selah called a person that did not pick up."
+  },
+  {
+    "input": "Eric: Hey Bella, What happened today in boss's room?? Was he angry??\nBella: NO NO!!! He wasn't angry at all.. He actually appreciated on our brave deccision to dismiss the request of client..\nEric: REALLY!! He appreciated this decision..\nBella: Yeah he really did.. I too was astounded by his reaction...\nEric: What could possibly lead to this?? I mean , they were potential clients...\nBella: What he told me was that he was looking forward to bring in new clients which were our current client's competitor..\nEric: Oh that could possibly be the reason.Well anyways you got appreciation xD congo\t\nBella: hahaha Blessing in disguise xD",
+    "output": "Bella and Eric dismissed a request of a client. Their boss appreciated the decision. He brings in new clients."
+  },
+  {
+    "input": "Ben: Where are you?\nEmma: at the rare of the bus\nBen: why?\nEmma: there are some free seats here\nEmma: so I can have a nap even\nBen: good idea\nEmma: when are we going to arrive to NY?\nBen: around 4.30 PM\nEmma: if traffic is not crazy\nBen: right, we will see\nEmma: could you come here and wake me up around 4.15?\nBen: sure\nEmma: thanks!\nBen: sleep well\nEmma: I'll try",
+    "output": "Emma is about to take a nap in the back of the bus to New York. Ben and Emma will be there around 4.30 pm. Ben will wake Emma up 15 minutes prior to their arrival."
+  },
+  {
+    "input": "Jesse: I have an idea that'll cheer u up!\nMelvin: What is it?\nJesse: I was thinking about doing something 4 the less fortunate this year. \nLee: Gr8 idea! Anything in mind?\nMaxine: So no presents 4 me? :(\nJesse: U'll get ur presents, no worries ;)\nMaxine: Phew! Was getting a bit worried for a moment ;)\nMelvin: Bt what do u have in store?\nJesse: Well, have u heard about the Refuge?\nLee: No. What's that?\nMelvin: That's the Christmas foundation to help women and children?\nMaxine: I think I've heard of them. So what about them?\nJesse: That's right! They help women and children who escape from abuse. And every year they post wish lists of such ppl online and I thought that we could choose one and chip in. \nMelvin: That's a great idea!\nLee: Count me in!\nMaxine: Me too.\nJesse: Have a look at these 3 lists: <file_other> <file_other> <file_other>\nLee: I think the second one would be the easiest to arrange.\nMaxine: Agree.\nMelvin: What about number 3? A bit ambitious, but if we pull together, we'll manage.\nJesse: Actually, I'm in for the 3rd one.\nMaxine: I think the 2nd list would be better. The items cos more or less the same and we can easily divide it.\nMelvin: But if we agree to chip in the same amount of money, we can deal with the 3rd one easily. \nLee: Come to think of it, the 3rd one is not that bad. A bit of planning and logistics and were good to go. \nJesse: So it's settled?\nMelvin: Yup.\nLee: Sure. \nMaxine: Fine.",
+    "output": "Jesse, Melvin, Lee and Maxine are going to take part in the Christmas charity action of the foundation called Refuge, which helps women and children who escape from abuse."
+  },
+  {
+    "input": "Mary: hey, im kinda broke, lend me a few box\nCarter: okay, give me an hour, im at the train station\nMary: cool, thanks",
+    "output": "Mary ran out of money. Carter is going to lend her some in an hour."
+  },
+  {
+    "input": "Charlotte: Hello Paula, a funny question: how do you pronounce 'Natal lily', the name of the plant? It refers to the region of ZA and not to the word 'natal' as in 'his natal day', right?\nPaula: Hi Charlotte, 'nu tell', 'nu' as in 'number'.\nCharlotte: And the stress on the second syllable? Or the first?\nPaula: 2nd\nCharlotte: Thank you dear.\nPaula: <file_other>\nCharlotte: Lovely to hear your voice!!\nPaula: :$\nPaula: <file_other>\nCharlotte: :X",
+    "output": "Paula helped Charlotte with correct pronunciation of \"Natal lily\"."
+  },
+  {
+    "input": "Jack: Cocktails later?\nMay: YES!!!\nMay: You read my mind...\nJack: Possibly a little tightly strung today?\nMay: Sigh... without question.\nJack: Thought so.\nMay: A little drink will help!\nJack: Maybe two!",
+    "output": "Jack and May will drink cocktails later."
+  },
+  {
+    "input": "Margaret: Honey, buy me some painkiller.\nJack: What is going on?\nMargaret: Terrible headache!\nJack: Maybe you should rest!",
+    "output": "Margaret is suffering from a terrible headache and wants Jack to buy her some painkillers. "
+  },
+  {
+    "input": "Andrei: hey, did you pick up the film equipment for tonite's shooting?\nSerge: no, im on my way there now.\nAndrei: cool. do you happen to have your credit card with you? we have an outstanding bill to pay with the company.\nSerge: yeah, i do. not a lot of available credit on it, but we'll see when we get there.\nAndrei: OK, thanks. theyll be glad when we pay it. its long overdue.\nSerge: ill let you know if it works out. getting of the metro now\nAndrei: ok",
+    "output": "Serge is on his way to pick up the film equipment for the shooting tonight. Andrei and Serge are late with a large payment to the company. Serge and Andrei will try to use the credit card to pay the company."
+  },
+  {
+    "input": "Janice: my son has been asking me to get him a hamster for his birthday\nJanice: should i?\nMartina: NO! NO! NO! NO! NO!\nMartina: i got one for my son and it stank up the whole house\nMartina: so don't do it!!!",
+    "output": "Martina advises against getting a hamster. "
+  },
+  {
+    "input": "Daniel: have you guys played DA?\nMary: which one?\nDaniel: Inquisition\nMary: damn yes\nMary: love it to bits - team Dorian <3\nLucas: is it any good? I played just DA II\nMary: is it any good?! it's fucking brilliant!!!\nMary: Dan, are you playing?\nDaniel: just started and I'm not sure, trying to get used to the mechanics\nMary: you have to give it a go, I was sceptical at first, but... omg, wait for Dorian\nLucas: Is it better than 2?\nMary: oh yes",
+    "output": "Mary has played DA Inquisition. Lucas has played DA II. Daniel started playing DA Inquisition."
+  },
+  {
+    "input": "Judy: Why am I always attracted to jerks??\nJanice: It didn’t work out with Andrew?\nJudy: He just wanted to fuck me\nJudy: When he got what he wanted he stopped calling and texting.\nJanice: And Bruce? He’s not a jerk.\nJudy: He’s sweet. Maybe too sweet for me…\nJudy: He’s a lovely and caring guy but I don’t feel the butterflies… ",
+    "output": "Judy thinks she's always attracted to bad guys."
+  },
+  {
+    "input": "Riley: Chloe is on tv!!\nJames: on which channel?\nJames: never mind i've found it\nJames: what is she doing? i don't get it\nRiley: this is a programme in which women undergo a complete metamorphosis.\nRiley: OMG she looks drop dead gorgeous!",
+    "output": "Riley and James watch Chloe on tv undergoing a metamorphosis."
+  },
+  {
+    "input": "Tina: I'll tell you something, this Emirate staff looks amazing, as movie stars\nAla: Oh yes, I know, that's for purpose \nAla: It's how it's suppose to be\nAla: They pay a lot of attention to the image\nTina: Looks nice, pleasure to observe\nTina: And I sucked at the airport, they've kept us one hour in the plane and finally I'll catch the evening flight back home\nTina: Could You imagine?\nTina: And you know, this way we had such a talkative pilot :-)\nAla: Oh, poor you\nAla: Pfff\nAla: And I'm on my way to a meeting\nTina: THE meeting?\nAla: Yes, keep your finger crossed\nTina: Sure, let me know how did it go\nAla: Ok darling, in touch",
+    "output": "Tina will catch the evening flight back home. Ala is on her way to the meeting. She will let Tina know how it went."
+  },
+  {
+    "input": "Sebastian: It's been already a year since we moved here.\nSebastian: This is totally the best time of my life.\nKevin: Really? \nSebastian: Yeah! Totally maaan.\nSebastian: During this 1 year I learned more than ever. \nSebastian: I learned how to be resourceful, I'm learning responsibility, and I literally have the power to make my dreams come true.\nKevin: It's great to hear that.\nKevin: It's great that you are satisfied with your decisions.\nKevin: And above all it's great to see that you have someone you love by your side :)\nSebastian: Exactly!\nSebastian: That's another part of my life that is going great.\nKevin: I wish I had such a person by my side.\nSebastian: Don't worry about it.\nSebastian: I have a feeling this day will come shortly.\nKevin: Haha. I don' think so, but thanks.\nSebastian: This one year proved to me that when you want something really badly, you can achieve it.\nKevin: I want to win lottery and I never did :D\nSebastian: If you devoted your life to analyze all of the winning numbers, and with your math skills you could win.\nKevin: Devote myself and million dollars for lottery tickets.\nSebastian: Something like that xD\nKevin: I'm happy for you man.\nKevin: I really am\nSebastian: Thanks. It means a lot my friend :)",
+    "output": "Sebastian is very happy with his life, and shares this happiness with Kevin."
+  },
+  {
+    "input": "Frank: Son, will you come home this weekend?\nSon: not sure yet. Something happened?\nFrank: Of course not. Your mother miss you.\nSon: I miss her too.\nFrank: So will you com?\nSon: I will try.\nFrank: Good, I will tell your mother that you will come\nSon: oh, dad.. ok I will come.",
+    "output": "Son is coming to see his parents' this weekend."
+  },
+  {
+    "input": "Ola: Hello Kate, sorry for not keeping in touch properly. As expected, we have hardly any connectivity here in Cuba. But we're doing fine and enjoying our trip. How are the things at home?\nKate: At long last! Started to worry. Nothing new happening, if you disregard all that Xmas craze. Momo has recovered from her injury and frolicking again.\nKate: <file_photo>\nKate: Good old Momo! Yes, it is your scarf!\nOla: NO!!! It's one of my favorites! The one from Laos!\nKate: Too late. Momo thinks it belongs to her now. Get yourself a new one. They surely have nice ones there.\nOla: Not at all. Only cheapish cotton blouses with horrible multi-coloured embroidery or some equally horrible crochetted tops. No shawls or scarfs.\nOla: <file_photo>\nKate: Wait a sec!\nKate: <file_photo>\nKate: Isn't it similar?! Mum would probably like it. Why don't you?\nOla: Not a bad idea. But the quality is usually crappy.\nKate: And if you go to some boutique shop or something? Not at a market as in your pics?\nOla: I might try and find some. Would you like one too?\nKate: Not really. And Mum would prefer to be the only one with an authentic Cuban blouse :))\nOla: OK I'll have a look. Greets to everyone at home pls.\nKate: Take care!",
+    "output": "Ola is in Cuba and is enjoying her trip. She has problems with connectivity there. Momo has recovered from her injury. Ola doesn't like the clothes in Cuba. Ola will try to find a blouse for mum in Cuba, as Kate suggested."
+  },
+  {
+    "input": "Mike: Do u have new John's number?\nAnn: No, u should ask Mary.\nMike: Ok, thank u :*",
+    "output": "Mike will ask Mary for John's new number."
+  },
+  {
+    "input": "Joseph: It's fuzzy but I think you can recognize what's that(^_-)-☆\nJoseph: <file_photo>\nElla: Ooooo\nElla: Baby cows??(/◕ヮ◕)/(/◕ヮ◕)/(/◕ヮ◕)/\nJoseph: Wujek Janek has tween cows:D\nElla: Twins* darling xD\nJoseph: Oh yeah, sorry Twins*\nElla: Good for him!! So cool❤️❤️\nElla: Wanna touch them❤️❤️❤️",
+    "output": "Joseph has sent Ella a photo of Wujek Janek's twin baby cows. Ella is delighted."
+  },
+  {
+    "input": "Josh: Stephen, I think you've accidentaly taken my notebook home\nStephen: wait lemme check\nStephen: nope, I don't see it anywhere\nJack: oh shit, I've got it xDDD I don't even know why\nJosh: xDDD ok, no problem, cool I know where it is\nJack: I'll bring it tomorow",
+    "output": "Josh thinks Stephen accidentally took his notebook. Jack has it and will bring it tomorrow."
+  },
+  {
+    "input": "Lola: hey girlfriend, what's up?\nAdele: Oh, hi Lols, not much.\nAdele: got a new dog.\nLola: another one?\nAdele: Yup. a pup biscuit lab. 4 months. Chewy.\nLola: how did the others react?\nAdele: the cats keep their distance, Poppy and Lulu seem to mother him. Speedy wants to play.\nLola: no fighting? that's new.\nAdele: they say puppies are accepted by other animals more easily than older dogs\nLola: especially girl dogs, probably\nAdele: with the other ones I had to wean them because I took them in as adult dogs. And girls like to fight. like crazy.\nLola: doggies, right/.\nAdele: that too :P\nLola: haha. true though.\nAdele: I know, right. Anyway, called him Bones. He's so plump it kinda fit.\nLola: cute. can't wait to see him.",
+    "output": "Adele got a new biscuit Labrador Chewy that is 4 months. Her cats keep their distance, and Poppy and Lulu seem to mother Chewy and Speedy wants to play."
+  },
+  {
+    "input": "Kristian: Adidas Or Nike?😃\nTabora: Adidas(＾ｖ＾)\nKristian: Watermelon or orange?😃😃\nTabora: Orange(＾ｖ＾)\nKristian: Superman or batman?😃😃😃\nTabora: Batman(＾ｖ＾)\nTabora: What are we doing now?\nKristian: Just playing games😃😃😃😃\nKristian: Wanna keep going?😃\nTabora: Sure! It is kinda fun!(*^0^*)\nKristian: Films or books?😃😃😀😀😀😀😀😀\nTabora: Films!(＾ｖ＾)\nTabora: When is my turn?",
+    "output": "Kristian and Tabora are playing a game about what they like best."
+  },
+  {
+    "input": "Cathy: Just realized I left my sunglasses at yours\nBroke: Yes, they are waiting for you to pick them up\nCathy: Might come round at 10 tonight if that's alright\nBroke: Yeah okay, see ya",
+    "output": "Cathy will pick up her glasses tonight at 10."
+  },
+  {
+    "input": "Petra: I need to sleep, I can't stand how sleepy I am\nAndy: I know, and it's so boring today, nobody's working at the office\nEzgi: I am working! lazy pigs\nPetra: I'm sleeping with my eyes open, kill me\nAndy: ask the fat woman from HR\nPetra: she would kill me on spot without batting an eye\nAndy: she always repeats she has a black belt in karate \nPetra: it's hard to believe she can move, but let her have whatever belt she wants\nAndy: LOL\nPetra: sooooo sleepy",
+    "output": "Petra is very sleepy at work today, Andy finds the day boring, and Ezgi is working. "
+  },
+  {
+    "input": "Nick: You look absolutely gorgeous and have a lovely smile. \nNick: Would love to get to know you a bit more. How about we meet up for a drink sometime?\nJane: Hmmm... You're shooting a bit above your range aren't you?\nNick: Why would you think that hon?\nJane: Because I'm not that desperate.\nNick: That was a bit below the belt.\nNick: You're nice but you're not THAT hot.\nJane: Oh is your poor little dick shriveling at the thought?\nNick: Actually I'll take it back. Forget about the drink.\nNick: Forget I ever wrote to you.\nJane: Bye loser!\nNick: Fucking bitch!\nJane: You're welcome!",
+    "output": "Nick finds Jane pretty and invites her for a drink to get to know her better. Jane rejects Nick and is unpleasant to him. Nick suggests Jane to forget about their conversation."
+  },
+  {
+    "input": "Adam: My friend told me he saw Tim with a guy.\nNate: And?\nAdam: <file_photo>\nNate: omg\nJulia: Yeah, what a shocker\nAdam: ??? You knew?!\nJulia: I thought everyone knew\nNate: I had no idea\nNate: Did he tell you anything?\nJulia: That he’s gay? God no\nAdam: Why didn’t you tell us?\nJulia: First: I assumed you knew\nJulia: Second: Why would I? it’s not my business\nNate: I think he should’ve told us ;/ not cool\nAdam: yeah, I made a completely idiot out of myself defending him\nJulia: Against whom? I’m not surprised he didn’t tell you\nNate: Well, it’s not fair, we’re his friends\nJulia: And? Does it change anything?",
+    "output": "Julia knew Tim was gay, while Adam and Nate didn't. "
+  },
+  {
+    "input": "Lilly: sorry, I'm gonna be late\nLilly: don't wait for me and order the food\nGabriel: no problem, shall we also order something for you?\nGabriel: so that you get it as soon as you get to us?\nLilly: good idea!\nLilly: pasta with salmon and basil is always very tasty there",
+    "output": "Lilly will be late. Gabriel will order pasta with salmon and basil for her."
+  },
+  {
+    "input": "Cara: hey\nCara: are you at home\nCeline: hey Cara\nCeline: No i'm not\nCara: okay then, i just wanted to pass by\nCeline: im sorry, i can drop by in the evening if you dont mind\nCara: its fine, call me then if you decide to come\nCeline: ok",
+    "output": "Celine is not at home, but she will call Cara before visiting her."
+  },
+  {
+    "input": "Craig: Man, u there?\nDerek: Yeah, tell me\nCraig: I need help with my computer\nDerek: What happened?\nCraig: I don't know exactly but it's not working\nDerek: Well, ok... give me 20 minutes, got to get to my car\nCraig: Ok, thanks\nDerek: No prob",
+    "output": "Derek will be at Craig's in 20 minutes to help him with his malfunctioning computer."
+  },
+  {
+    "input": "Emma: Hi neighbour :)\nEmma: Do you want to take a stroll with the little ones?\nAbigail: Hey Emma :) I don't think that's a good idea.\nAbigail: My smog alert app is showing that the norms have been exceeded by 30% today :O\nEmma: Oh my, that sounds serious.\nEmma: I need to install that app.",
+    "output": "Abigail is not going to take a stroll with the little ones. Her smog alert app is showing that the norms have been exceeded by 30% today."
+  },
+  {
+    "input": "Paul: What color flowers should I get\nCindy: any just not yellow\nPaul: ok, pink?\nCindy: no maybe red\nPaul: just tell me what color and what type ok?\nCindy: ugh, red roses! ",
+    "output": "Paul will buy red roses following Cindy's advice."
+  },
+  {
+    "input": "Mary: Hello, I think you've left your credit card at our shop\nJenny: Thank you for getting in touch! Thank you so much!\nMary: No worries :)\nJenny: When can I pick it up?\nMary: Whenever you come, it's safe with one of our cashiers :)",
+    "output": "Jenny has left her credit car at the Mary's shop."
+  },
+  {
+    "input": "Gary: Hey, don't forget about Tom's bday party!\nLara: I won't! What time should I show up?\nGary: Around 5 pm. He's supposed to be back home at 5:30, so we'll have just enough time to prep things up.\nLara: You're such a great boyfriend. He will be so happy!\nGary: Yep, I am :)\nLara: So I'll just pick up the cake and get the balloons...\nGary: Thanks, you're so helpful. I've already paid for the cake.\nLara: No problem, see you at 5 pm!\nGary: See you!",
+    "output": "It's Tom's birthday. Lara and Gary will come to Tom's place about 5 pm to prepare everything before Tom gets back home at 5:30. Gary has already paid for the cake - Lara will pick it up and she will also get the balloons. "
+  },
+  {
+    "input": "Laura: Where are you?\nPaul: Almost there.\nLaura: Which is?\nPaul: Close to the Mac.\nLaura: That's so far away!\nPaul: 15 mins\nLaura: I am not waiting any more, see you some other time.\nPaul: Please, wait!\nLaura: I've waited 30 minutes, 15 minutes ago you wrote you were almost here. This is too much.\nPaul: I am so sorry.\nLaura: I am not. ",
+    "output": "Paul is late for a meeting with Laura and she refuses to wait any longer."
+  },
+  {
+    "input": "Salma: <file_video>\nSalma: the latest cat meme\nHugh: oh sweet, I can never get enough of those lol\nHugh: <file_photo>\nSalma: hahaha same",
+    "output": "Salma and Hugh like cat memes."
+  },
+  {
+    "input": "Matt: results should be announced soon\nMatt: probably today \nOliver: they posted it\nOliver: <file_other>\nPeter: I didn't get into Stanford :(\nMatt: let me see\nMatt: yup, I did\nOliver: me too\nOliver: barely\nPeter: I'm happy for you guys\nMatt: chin up! there are many other options\nOliver: exactly, don't give up\nPeter: thanks guys, that means a lot\nPeter: send your documents asap\nPeter: otherwise you'll stuck in the queue\nMatt: thanks for a heads-up\nOliver: yea, we owe you one\nPeter: I have to look for other university\nPeter: see ya\nMatt: bye",
+    "output": "Todays results show that Matt and Oliver got into Stanford University, Peter did not. "
+  },
+  {
+    "input": "Jake: we don't have english today\nNadia: whooooah!\nVanessa: cool! you sure though?\nJake: Smith called in sick, they couldn't find a replacement, oh yeah",
+    "output": "English classes were cancelled because Smith called in sick and replacement could not be found."
+  },
+  {
+    "input": "Brandon: Shit, I've lost my credit card!\nBrandon: I blocked it in the bank but it will take time before I get a new one\nBrandon: can you lend me $ 100 guys?\nLuke: sorry man, Im broke:/\nBrandon: I see\nIan: what a misfortune, dude\nIan: I can lend you $$, no problem\nBrandon: thanks, dude!",
+    "output": "Brandon has lost his credit card and blocked it in the bank. It will take some time before he gets a new one, and he needs money. Luke is broke, but Ian will lend Brandon some money."
+  },
+  {
+    "input": "Inez: My dears, our evening inspired me to create this group conversation to plan further Food Evenings :)\nInez: This is my proposal for the next one: <file_photo>\nAlicja: Wow, I will actually feel happy going to work thanks to this :D\nGosia: Happy going to work and even happier leaving it haha\nAlicja: Just too bad that the time between 9 and 17 will be wasted :P\nPatrycja: I really liked our evening, even the pizza was delicious :) How did you girls like it?\nInez: I loved it, Gosia really chose a great place :)\nGosia: I am an expert at eating :D\nAlicja: Have you been to this restaurant Inez sent?\nGosia: No, it is quite new. But I heard good opinions! :D\nPatrycja: And it fits with our theme of exploring world cuisines :)\nAlicja: First Italy, now Korea! :D\nInez: So when could we do this again?\nGosia: I am not sure, but we have to before the holidays!\nPatrycja: We should have less work in two weeks, we could go again on Wednesday?\nAlicja: Sounds good to me!\nInez: Me too :D",
+    "output": "Patrycja and Inez enjoyed the Italian evening. Gosia chose a great place. Alicja hasn't been to the new restaurant. They all want a Korean evening on Wednesday in two weeks time."
+  },
+  {
+    "input": "Ana: You sleeping?\nCatherine: Not yet.\nAna: Wanna go visit grandma tomorrow? I miss her.\nCatherine: Yeah that would be nice :) I'll call you when I wake up\nAna: Oki :) sleep well, good night.\nCatherine:  Good night, u too.",
+    "output": "Ana wants to visit grandma tomorrow. Catherine will go with her. She will call Anna when she wakes up."
+  },
+  {
+    "input": "Joyce: Check this out!\nJoyce: <link>\nMichael: That's cheap!\nEdson: No way! I'm booking my ticket now!! ",
+    "output": "Edson is booking his ticket now."
+  },
+  {
+    "input": "Jane: google maps says it is at least 3h <file_other>\nSteven: I used to make it in 2, trust me :D\nJane: but it's almost 300km..\nSteven: the road is new , we will make it ^^\nJane: I don't want  to stress out , let's meet at 4:30 instead of 5, ok?\nSteven: ok, if u reaaly want, we can meet at 4:30\nJane: thx! \nJane: I will wait at the main entrance or where?\nSteven: main entrance is good for me;-) \nSteven: cu",
+    "output": "Jane wants to leave at 4.30 instead of 5 because Google Maps suggests the 300 km drive should take them at least 3 hours and she doesn't want to be late. She will wait for Steven at the main entrance."
+  },
+  {
+    "input": "Morgan: Hey gorgeous, how’s your day?\nSuzanne: Nothing special, it’s just one of many boring days at work. But… better now though!\nMorgan: Are you working at all? 😉\nSuzanne: I’m trying 😉 But you aren’t helping me, at all\nSuzanne: I’m just taking a well-deserved break 😉\nMorgan:  I miss you Suzie\nSuzanne: I miss you too Morgan\nMorgan: Do you feel like going to a concert next week? Maroon 5 is playing at the Hulu Theater at Madison Square Garden.\nMorgan: As it happens, I’ve got two tickets 😉\nMorgan: Do you want to go?\nSuzanne: Really? OMG! That’s wonderful!\nSuzanne: Thank you sweetheart!\nMorgan: Oh, nothing. I just want you to be happy 😉",
+    "output": "Suzanne is at work and is having a break now. Morgan invites Suzanne to a concert of Maroon 5 which takes place next week at the Hulu Theatre at Madison Square Garden. Suzzanne agrees."
+  },
+  {
+    "input": "Liam: <file_other>\nLiam: have you read this one?\nJulia: wow, I didn't even know that it existed\nJulia: thanks! The last one I read was Die again\nLiam: this one is like from 2014?\nJulia: yep\nLiam: I've heard that city library is organizing a meeting with Tess\nJulia: really? That would be really awesome\nLiam: just check it out on their facebook",
+    "output": "The last one Julia read was Die again from 2014. There's going to be a meeting with Tess organized by the city library. "
+  },
+  {
+    "input": "Ali: I think I left my wallet at your place yesterday. Could you check? \nMohammad: Give me a sec, I'll have a look around my room.\nAli: OK.\nMohammad: Found it!\nAli: Phew, I don't know what I'd do if it wasn't there. Can you bring it to uni tomorrow?\nMohammad: Sure thing.",
+    "output": "Ali left his wallet at Mohammad's place. Mohammad'll bring it to uni tomorrow."
+  },
+  {
+    "input": "Laura: where will we go tommorow?\nLinda: maybe this italian restaurant?\nLaura: hmm ok\nLinda: i love their pasta\nLinda: and brownie :)\nLaura: i thouht you dont eat sweets\nLinda: this brownie is not so sweet",
+    "output": "Linda and Laura are going to an Italian restaurant tomorrow."
+  },
+  {
+    "input": "Natalie: Well well weeeeeell, I see somethings going on here at last\nMartin: (Y)\nAdam: any confirmed data?\nAnna: Hello everyone!!! Id love to invite everybody to my bday. I would be extremaly happy if you could come 6th of November at 1930\nMartin: <3\nMargot: <3\nMia: (Y)",
+    "output": "Anna organises a birthday's party on the 6th of November at 19:30."
+  },
+  {
+    "input": "Mia: babe, do you mind if i go out after work tonight?\nElliot: yeah, sure. go for it ;) \nMia: thanks, babe. it's gonna be girls night out \nElliot: what're u up to?\nMia: well, you know we gonna grab some drinks have some nice time outside of work\nElliot: don't be too late please and if you need me to pick u up just give me a ring ",
+    "output": "Mia is going out after work tonight with her female friends. If she wants, Elliot will come and pick her up."
+  },
+  {
+    "input": "Jayden: But I don't need kids. Kids means over. At least for a woman\nBrennan: Over what ?\nJayden: The end of normal life. Being pregnant, suffering because of this etc\nBrennan: Hmm so I need to look for another mother to my kids then. Haha\nJayden: Being obligated to be with the. 24h. Men have only sex and they wait for kids while women suffer\nBrennan: I don't agree...\nJayden: I wish I could do the same. Then probably i would say the same like u.\nBrennan: Guys like me would be there through it all to reduce the suffering\nJayden: Physical suffering. No one can do anything with this. I wish I could just have sex and wait for a baby while having a normal life. Not getting fat, having the same body, the same breast and not disgusting ... Not feeling sick, not having pain, being able to do every day stuff even like walking...\nBrennan: It's gonna happen eventually\nJayden: I was I'm a store, behind me there was a pregnant woman, she dropped some money and she couldn't even take them from the floor... I had to help her\nBrennan: That's because she's about to give birth\nJayden: I hope that maybe soon they will be possible to have a child without being pregnant. Yes! And she's suffering\nBrennan: Any I'm sorry for feeding you with my bullshit\nJayden: While a man is doing his normal stuff. U mean the conversation?\nBrennan: I hope you find a guy that can give you the sex you want and not get pregnant\nJayden: Would be awesome\nBrennan: I'm gonna go to sleep now. Good night\nJayden: I said I don't want to have any children now! Maybe in the future when I have a good job, I'm financially independent. Good night",
+    "output": "Jayden explains Brennan why she doesn't want to be pregnant."
+  },
+  {
+    "input": "Steve: BTW, USA won last night!\nGulab: I forgot to check!\nSteve: England playing tomorrow at 2:00!\nGulab: That's right, Croatia?\nSteve: Yep.",
+    "output": "USA won last night. England is playing against Croatia tomorrow at 2."
+  },
+  {
+    "input": "John: Ela i am coming in 10 mins please give me my walle outside t i forgot it\nEla: yes just saw it when you are here call me\nJohn: but your phone is busy thats why i messaged keep it free please i am getting late\nEla: oh yes was talking to mom ... its free now\nJohn: ok",
+    "output": "John forgot his wallet. He wants Ela to give it to him outside in 10 minutes."
+  },
+  {
+    "input": "Mary: Did you tell your sister I am doing online job?\nMark: yes !\nMary: why\nMark: because she keep saying your good for nothing?\nMary: dint I tell you I don’t care?\nMark: what happened?\nMary: see I don’t want to prove anything to anyone..\nMark: I know… but I was just feeling proud so it was kind of show off…\nMary: she is asking everyone… and trying to get to the people I am working for\nMark: really!! I am sorry for that…\nMary: don’t be! I understand your feelings…  but u know how she is…\nMark: I know!! :? \nMary: don’t be sad now its ok.. she cant do much about it… chill its ok but just be careful\nMark: I will be ..\nMary: btw it feels good that she is so jealous :P\nMark: lol my aim was to make her feel jealous\nMary: but i dont like it that she tries to contact the people i am working for ... what does she want?\nMark: may be she wants to confirm if its true... because its not easy to digest that your working from home and earning well!!!\nMary: whatever i just hate her\nMark: chill now .... :) love you\nMary: i am chilled :cool: ... love you too honey",
+    "output": "Mark told his sister that Mary is doing an online job. Mark's sister is contacting people to confirm it. Mark thinks she's jealous. Mary hates Mark's sister."
+  },
+  {
+    "input": "Fiona: Are you free?\nTina: Yes, what's up?\nFiona: I'm trying to prepare a nice dinner for Chris and I thought that maybe I could prepare this tart of yours :)\nTina: I'm flattered!\nFiona: Well, it IS delicious :) Could help me do it?\nTina: Sure! It's not difficult. Do you have anything ready?\nFiona: I must admit I bought the crust...\nTina: Oh, ok :P Pity, but well, it's too late now.\nFiona: I tried making the filling once, but I finished with lemony scrambled eggs...\nTina: It happens, don't worry. The thing is that once you start adding eggs you can't stop mixing it, otherwise you'll end up with scrambled eggs.",
+    "output": "Fiona wants to prepare dinner for Chris. She is thinking of Tina's tart. She will help her make it."
+  },
+  {
+    "input": "Peadar: So who's coming for a drink later then??!\nClare: Oh lols soz I'm not in town\nAnnette: A drink?!!?!!\nPeadar: A drink!!!\nAnnette: I’m home sick soz huns\nAnnette: Got lung lurgy\nOli: Are people at Jesus bar now?\nJames: Heading to Jesus bar now! Come join :) turn left as you come into college\nAnne: Woops.. . Sorry guys I double booked myself!\nHelen: Yes! Jesus bar, from around 9.15 ish\nPeadar: Was that just a question oli😋 or did you mean... I'll join ye😁\nOli: I cycled and ran around the bar, but couldn't find anyone 😢\nClare: You cycled around the bar?\nOli: To the bar 😅\nHelen: 🙈😍😇",
+    "output": "Annette is sick. James is going to the Jesus bar. Oli couldn't find anyone near the bar."
+  },
+  {
+    "input": "Ryan: I have a bad feeling about this\nRyan: <file_other>\nSebastian: Ukraine...\nSebastian: This russian circus will never end...\nRyan: I hope the leaders of of nations will react somehow to this shit.\nSebastian: I hope so too :(",
+    "output": "Ryan and Sebastian are worried about the political situation in Ukraine."
+  },
+  {
+    "input": "Finn: Hey\nZadie: Hi there! What's up?\nFinn: All fine. You? \nZadie: Not bad, thanks \nFinn: Look, I was thinking of going to this neighborhood called Elephant and Castle tomorrow, it's apparently full of Latin American stuff. Fancy joining? \nZadie: Sure! But what's \"stuff\"? 😂\nFinn: lol So apparently it's a place were random people from \"Latin America\" (meaning fuck knows which countries) started running small businesses and restaurant, and a nice little community was formed\nZadie: Oh cool \nFinn: Then capitalism came and it's all going to be demolished soon, so it's like the last chance to go\nZadie: What a shame :( Yeah, I haven't had Latin American 😂 food for ages so I'm totally up for it\nFinn: Can't wait to taste this cuisine of unspecified Latino origin lol\nZadie: 😂😂😂\nFinn: But we can specify time and place if and only if you wish \nZadie: I might be tempted to lol I'd say early evening, 2-ish?\nFinn: Yeah, that's fine by me. So most of the places we want to visit are in this Elephant and Castle shopping centre. Shall I see you at the main entrance, wherever that is \nZadie: 2 o'clock at unspecified main entrance then? Sounds good to mw\nFinn: Yer\nZadie: Cool, see you there! And thanks so much for remembering about me 💜💜💜\nFinn: Thanks for saying yes to such an ill-defined plan lmao \nZadie: Ha ha You know I love those\nFinn: See you tomorrow then \nZadie: Yep Call me if you get lost\nFinn: I will I will 🤙 byeeee \nZadie: Toodles",
+    "output": "Finn and Zadie are going to Elephant and Castle tomorrow at 2. They will meet at the main entrance."
+  },
+  {
+    "input": "Harry: and? have you listened to it?\nJacob: listened to what?\nHarry: to the song i sent you 3 days ago -.-\nJacob: oh shit, i completely forgot...\nHarry: ofc again\nJacob: don't be like this :* i'll do that later tonight\nHarry: heh, okay\nHarry: i'm really curious what you'll think about it\nJacob: i'll let you know, a bit busy right now, speak to you later!\nHarry: okay",
+    "output": "Jacob hasn't listened to the song Harry sent him 3 days ago. Jacob will do it later tonight and let Harry know what he thinks."
+  },
+  {
+    "input": "Ray: u in ur room?\nMax: no whats up\nRay: someone locked the door from outside -_-\nMax: wtf xD\nRay: yeah dude cmon u gotta let me out\nMax: but im out\nRay: are u kidding me\nMax: sorry man XD\nRay: dude i have to pee\nMax: HAHAHAHHAHAHA XD\nRay: thats not funny >.<\nMax: it actually is xD\nRay: can u ask someone else to do it\nMax: yea let me see if my roommates there\nRay: HURRY\nMax: hes coming\nRay: tell him to HURRYYY\nMax: hes on his way \nRay: he opened it, thanks\nMax: enjoy XD",
+    "output": "Ray is locked in the room from the outside and he has to pee. Max's roommate will come and let him out."
+  },
+  {
+    "input": "Kim: What kind of gift would you like to get?\nKim: Mom's asking.\nHarry: Haha. No need for a gift for me :D\nHarry: But you can tell your mom I just bought a new sofa and I need pillows.\nHarry: If she asks for the colour, tell her that grey is the best :D\nKim: Sure! Thanks for info :) ",
+    "output": "Kim is about to tell mom that Harry bought a new sofa, and he needs grey pillows."
+  },
+  {
+    "input": "Josh: I need to buy an iPad?\nJosh: do u think apple it's a good choice?\nBrian: Nope, u gonna pay to have the sign of apple  on yr fucking iPad.\nJosh: so what would u recommend?\nBrian: u mean brands?\nBrian: Samsung, Xiaomi, Sony\nBrian: depends on yr budget..\nJosh: let's say 2000..\nBrian: what about this ? <file_other>\nBrian: or this <file_other>\nBrian: actually, if u want samsung I can get it cheaper for u\nJosh: oh, good\nBrian: call me after work, ok?\nJosh: ok",
+    "output": "Josh wants to buy a tablet and doesn't know which brand he should choose. According to Brian, other brands are better than Apple and he can get a Samsung tablet cheaper. Josh will call Brian after work to talk about it."
+  },
+  {
+    "input": "Olafur: are we doing anything for New Year's Eve?\nNathalie: I was thinking about something classy, like opera or sth like that\nZoe: how much does it cost?\nOlafur: opera is not for me\nNathalie: so what do you propose?\nNathalie: it's 100$ \nOlafur: I was thinking about partying somewhere\nNathalie: partying sounds fun, as long as it will be classy\nZoe: <file_link>\nZoe: Breakfast at Tiffany's party sounds classy\nOlafur: <file_link> \nOlafur: is it classy enough?\nNathalie: :O\nNathalie: this club is AMAZING\nZoe: whoa\nNathalie: we'll going to Soho then\nOlafur: we just need to hurry up and buy some tickets soon\nZoe: sure",
+    "output": "Nathalie, Olafur and Zoe are planning the New Year's Eve. Nathalie wants something classy. Olafur doesn't like opera. They want to go to the Breakfast at Tiffany's party in Soho."
+  },
+  {
+    "input": "Frank: wat are u doing??\nAndy: watching Arrow B)\nFrank: dont u have a quiz tomorrow :/\nAndy: yeah, so? :3\nFrank: so go study for it \nAndy: its a small quiz\nFrank: so it doesnot matter??\nAndy: it does, but ..\nFrank: but??\nAndy: i'll study for it tomorrow\nFrank: yea like ur gonna wake up on time for that -_-\nAndy: dude your not my dad\nFrank: -_-",
+    "output": "Frank tries to encourage Andy to learn for the tomorrow's quiz."
+  },
+  {
+    "input": "Kim: Hey, listen, have you got any idea where I can get some fresh ramal fish in Warsaw?\nMargot: Hi, I don't know about \"fresh\", but you could try the marketplace at Polna street. \nMargot: Other than that, I haven't got a clue...\nKim: Already tried Polna :(\nMargot: Ah!\nMargot: Hm...\nMargot: And did you check Internet for fish market in Warsaw?\nKim: Yeah, there's none.\nKim: Or I didn't find it. \nMargot: You could have a look at restaurants' menus. And if you find it there, you could ask about their source. \nMargot: Although I'm not sure they'd eager to give you such infromation. But you can always try..\nKim: Great idea, I haven't though about this! Thx!\nKim: I'll try. After all, I have nothing to loose. \nMargot: Btw, is there a special occasion you want to cook it for?\nKim: Yes! Acctually I'll grill it ;)\nKim: And it's a surprise, so I'm not giving away any details!\nMargot: I'm so curious!\nMargot: I understant it's sth good, so I'm happy for you girl :)\nKim: Indeed, it's good. But you won't get any more infromation from me now.\nKim: All in good time :)\nMargot: Cruel you! Find that fish!!! ;)\nKim: :D",
+    "output": "Kim needs to get some fresh fish in Warsaw. Kim will ask at restaurants about their source. Kim is planning something special but won't share any details with Margot for now."
+  },
+  {
+    "input": "Tom: Ben. We've decided. 2pm in the Oval Room.\nBen: Ok, I'll be there\nTom: Take all your papers, it's going to be a fight! And remember: take no prisoners, shoot to kill!\nBen: hahaha, we have to win this battle.\nTom: We will, the justice is on our side.",
+    "output": "Tom will meet Ben in the Oval Room at 2pm and tells him to bring the papers. "
+  },
+  {
+    "input": "Ashleigh: Looks like we're going to the cinema!! \nAshleigh: <file_gif>\nPeter: You got the job??\nAshleigh: I got hte job! :D\nPeter: <file_gif>\nAshleigh: <file_gif>",
+    "output": "Ashleigh got the job."
+  },
+  {
+    "input": "Danna: How's your Saturday?\nReed: It was alright thanks\nDanna: Good\nReed: Yours ?\nDanna: Boring\nReed: Why?\nDanna: I'm angry I called maybe 5-8 of my friends and they aren't around or are busy.\nReed: Shame\nDanna: So it's is the next boring weekend for me\nReed: That sucks\nDanna: The only thing I can do is watching TV -.-\nReed: Haha lucky you\nDanna: Yeah haha\nReed: I don't have tv, our subscription expired and they never renewed it. They want us to pay for it so fuck it\nDanna: Yeah. What are you doing?\nReed: I'm in bed\nDanna: Work tomorrow?\nReed: No. Off tomorrow\nDanna: Nice\nReed: Indeed",
+    "output": "Danna has a boring weekend and is watching TV. Reed is in bed. He has a free day tomorrow."
+  },
+  {
+    "input": "Antonio: Is everything okay? You've been quiet lately\nAlivia: Oh, hi, yeah, I've just been working on my thesis\nAlivia: Or rather trying to work, it's not going too well\nAntonio: Oh :( Problems finding research materials?\nAlivia: Well\nAlivia: That isn't really as big a problem, the worst part is actually sitting down and writing\nAlivia: I find the topic interesting and all, I don't mind reading articles and books\nAlivia: But when I'm supposed to write, it's like I blank out and can't type a single word w/o thinking I sound stupid...\nAntonio: I know the feeling...\nAntonio: You should probably stop thinking about it so seriously, just write and you can edit it later\nAntonio: Once you get past the initial difficulty, it'll get better, at least that's what it was like for me\nAlivia: I'd like to think so... Thanks... I'll try. And thanks for your concern <3",
+    "output": "Alivia has been taciturn lately. She was trying to write her thesis. She can't focus on writing. She'll try to follow Antonio's advice to start writing without overthinking."
+  },
+  {
+    "input": "Maddie: I'm in Asda, do you need anything?\nJohn: could do with a white bread and some apples \nMaddie: ok. Gala?\nJohn: yes please ta",
+    "output": "Maddie will buy a white bread and apples on John's request."
+  },
+  {
+    "input": "Elliot: i can't talk rn, i'm rly busy\nElliot: can i call u back in about 2 hours?\nJordan: Not really, I'm going to a funeral.\nJordan: I'll call you tonight, ok?\nElliot: sure\nElliot: whose funeral is it?\nJordan: My colleague's, Brad.\nJordan: I told you about him, he had a liver cancer.\nElliot: i'm so sorry man, i hope u're ok\nElliot: i'll call u at 8 pm",
+    "output": "Elliot can't talk to Jordan now, he's busy. He'll call him back at 8 pm. Jordan is going to Brad's funeral. He had liver cancer."
+  },
+  {
+    "input": "Flo: OMG, I can't get into the salon until the 6th!\nGina: What? Why?\nFlo: They're just too busy. I'm going to be gray! LOL!\nGina: Get you a touch-up kit at Tesco!\nFlo: Gonna have to!",
+    "output": "Flo cannot get an appointment at the salon until the 6th. Flo worries she's going to be gray. Flo will have to get a touch-up kit at Tesco."
+  },
+  {
+    "input": "Rob: hey, pick up your phone :)\nAnn: can't - meeting :)\nRob: sorry...\nAnn: no problem - super boring one :) \nAnn: what you need babe?\nRob: I'm at the grocery store and was wondering if we need anything\nAnn: some food :)\nRob: yeah, I figured that smartass :)\nAnn: :*\nRob: details? so that you won't moan we don't have anything to eat :)\nAnn: from what I remember we have everything for supper and lunch tomorrow, maybe some fruit and vegetables?\nRob: anything in particular?\nAnn: cucumber, tomatoes, bananas, apples and whatever you like\nRob: ok",
+    "output": "Rob is doing shopping at the grocery store. Ann ordered him to buy a cucumber, some tomatoes, bananas and apples."
+  },
+  {
+    "input": "Marvin: When's the last time you got laid ?\nMelany: I don't even remember..\nMarvin: Hmm so there must be lots of cobwebs between your legs now huh hahaha",
+    "output": "It's been very long since Melany last had sex. Marvin made an inappropriate joke about it."
+  },
+  {
+    "input": "Eric: <file_video>, check it out :D\nSamantha: HAHA, what is our favorite professor?\nEric: Talking about this recent scandal on the news :P\nNoah: \"I am the smartest person alive, I knew this will happen\" :D\nSamantha: Hahaha, now I don't even need to open the video",
+    "output": "Eric, Samantha and Noah's professor is commenting a recent scandal on the news. "
+  },
+  {
+    "input": "Jacky: I think you were right yesterday. \nDavid: What about? I'm right about most things :P\nJacky: Yeah, whole you ;)\nJacky: About taking the blame etc. \nDavid: Okey, I remeber. We'll talk later?\nJacky: With pleasure. I'll call you when I get home.",
+    "output": "According to Jacky, David did the right thing taking the blame. They will talk when Jack comes back home."
+  },
+  {
+    "input": "Chris: Hi there! Where are you? Any chance of skyping?\nRick: Hi! Our last two days in Cancun before flying to Havana. Yeah, skyping is an idea. When would it suit you?\nRick: We don't have the best of connections in the room but I can get you pretty well in the lobby.\nChris: What's the time in your place now?\nRick: 6:45 pm\nChris: It's a quarter to one in the morning here. Am still in front of the box.\nRick: Gracious me! Sorry mate. You needn't have answered.\nChris: 8-D\nRick: Just tell me when we could skype.\nChris: Preferably in the evening. Just a few hours earlier than now. And not tomorrow.\nRick: Shute! Only tomorrow makes sense as there's no workable internet in Cuba.\nChris: Could you make it like 3 pm your time?\nRick: Sure.\nChris: Perfect. So talk to you tomorrow.\nChris: Give my love to Helen please.\nRick: I will. Thx.",
+    "output": "Rick and Helen are in Cancun. They're flying to Havana in two days. Chris and Rick will talk on Skype at 3 PM in Mexico."
+  },
+  {
+    "input": "Ying: <file_photo>\nYing: my 10 years challenge everyone\nHelen: wow\nNorma: :O\nZazu: dude...\nZazu: I'm impressed",
+    "output": "Ying sent a photo of his 10 years challenge to Helen, Norma and Zazu."
+  },
+  {
+    "input": "Daniel: Yo, at what time do you get out of work?\nMissy: At 6.\nDaniel: Drinks after dinner?\nMissy: Totally!\nDaniel: Cool.",
+    "output": "Daniel will see Missy after 6 for drinks."
+  },
+  {
+    "input": "Pete: Did you clean the hamster cage?\nAdelle: No. Is it my turn?\nPete: Yes. After school, no excuses.\nAdelle: Fine.",
+    "output": "Adelle has to clean the hamster cage after school."
+  },
+  {
+    "input": "Randolph: Honey\nRandolph: Are you still in the pharmacy?\nMaya: Yes\nRandolph: Buy me some earplugs please\nMaya: How many pairs?\nRandolph: 4 or 5 packs\nMaya: I'll get you 5\nRandolph: Thanks darling",
+    "output": "Maya will buy 5 packs of earplugs for Randolph at the pharmacy."
+  },
+  {
+    "input": "Jane: hey david, you're coming home for christmas next week right?\nDavid: of course\nJane: good\nJane: do you know what your dad would like for christmas?\nJane: i can't think of anything\nDavid: you should get him an ipad\nDavid: he can read books, email, watch movies, play games\nJane: ok, that sounds good, where can i get one?\nDavid: i'll order it online and have it shipped home\nJane: thanks for your help\nJane: and please let me know when you'll get here once your travel arrangements are set.",
+    "output": "David is coming home for Christmas next week.  Jane has no idea what to buy their father so David is going to order an ipad online."
+  },
+  {
+    "input": "Isabella: Hi Betty!\nIsabella: It was very nice to listen about your work yesterday. Thank you for sharing that!\nIsabella: If you wanted to do sth together, let me know. \nBetty: Thank you! ",
+    "output": "Isabella is grateful to Betty for sharing the information about her work yesterday. Isabella offers Betty her company, should Betty want to do something together."
+  },
+  {
+    "input": "Hollie: How are you?\nAmy: hey\nAmy: i'll get back to you later, working now\nHollie: Ok.",
+    "output": "Hollie says hello to Amy, but Amy is busy working and can't chat right now."
+  },
+  {
+    "input": "Huda: going swimming wanna join?\nAlex: sure.. what time?\nHuda: in 2 hours \nAlex: ok i will be there then\nHuda: see ya",
+    "output": "Alex will go swimming toghether with Huda in two hours. "
+  },
+  {
+    "input": "Janet: I am ashamed. Who voted for this pussy? It's your fault.\nAlison: Remember the Wizard of Oz? He might have melted.\nNicole: He’s a sissy boy.\nCheryl:  RAIN omfg thats so shameful and disrespectful 😡\nBuff: Pussy in Chief.\nLinda: Trump is selfish and inconsiderate.\nJanet: What an embarrassment to our nation and the world!!!\nRoz: Where is Elsie? I miss you vomit 😊\nCheryl: WTF EVER trumpola didnt want to mess up his pity full comb over.....\nJanet: Trump = snowflake\nLinda: Baby. He’s a spoiled brat baby. Nothing about Donald Trump to be proud of or want to defend.\nArlene: HIs hair and makeup would have been ruined!\nRoz: Exactly 😊\nLeslie: Which adviser, who he doesn't listen to anyway, thought missing this ceremony was a good idea? Shameful!\nEric: What a pussy. We should grab him and kick him to the curb.\nSue: All the other leaders managed to make it, so there is no excuse, for me.\nRoz:  It's all about the hair.\nSue: afraid the colour of his orange hair would run????\nLinda: Never heard of an umbrella :)",
+    "output": "Janet, Nicole, Alison, Arlene, Leslie, Ros, Eric and Sue are all complaining about Donald Trump and his absence at the ceremony. "
+  },
+  {
+    "input": "Teacher: Rashi, why are you so low? \nRashi: Ma’am I’m a bit confused about my career. \nTeacher: What is your confusion?\nRashi: I was discussing with my friends about the career options. \nTeacher: Hmm.\nRashi: There are too many to choose from.\nTeacher: Choose a career based on what truly interests you. \nRashi: I have many that interests me. How does it determine the career?\nTeacher: The passion you have for what you do drives you to success. \nRashi: But what about earnings?\nTeacher: Remember at some point of time one should learn to balance  between duties and success.\nRashi: How do I do that?\nTeacher: Choose a career which interests you, get experienced and try to progress and widen the scope after a while.\nRashi: Hmm, ok.\nTeacher: Something like earn and learn sort of..\nRashi: You are so right. I will remember this.\nTeacher: So hope I managed to answer your questions.\nRashi: Yes mam! Thank you very much! \nTeacher : You are most welcome, Rashi.",
+    "output": "Rashi is confused by too many career choices. Teacher advises him to choose something he has passion for and what interests him."
+  },
+  {
+    "input": "Corbin: Is this the department in charge of school violence?\nDimitri: Yes, it is.\nCorbin: I want to report school violence in our school.\nDimitri: Okay. What school are you in?\nCorbin: Jungang high school. The student who is victim of the violence is my friend.\nCorbin: They are not hitting him any more. But you should help my friend.\nCorbin: If they notice I was the one who reported, they will hit me as well.\nDimitri: First, calm down. Give us your phone number. You will be safe.\nCorbin: 486-984-324 It is.\nDimitri: Don’t worry. I will call you now, ok?",
+    "output": "Corbin reported to the department in charge of school violence that his friend has been beaten."
+  },
+  {
+    "input": "Marta: Hey hey :)\nMarta: 😊\nMarta: Do you happen to know a good technician, that fixes PC's? 😑\nJoel: Hello! No, sorry. I only know of the guys in IT, back at the office. However Pablo, the best one on the team, he is on vacation this week..:/\nJoel: Ask Cynthia or Elena, they might know someone.\nMarta: Ok, thank you! Yes, I will give them a try 🤞",
+    "output": "Marta needs help with the PC. On Joel's advice, she will contact Cynthia or Elena as they might know someone. "
+  },
+  {
+    "input": "Ann: What should I prepare 4 my dad's birthday?\nFiona: How old is he?\nAnn: turning 50\nFiona: wow, a round birthay, it must be sth big\nAnn: I know, but I don't have any idea\nFiona: surprise party?\nAnn: My dad hates dose\nFiona: ok, so what does he like?\nAnn: I don't know, he watch a lot of military movie\nFiona: well, a movie ticket is probably not what you thought of\nAnn: not even close\nFiona: Maybe some event. U know like bungee jumping or parachute jump\nAnn: that would be nice but he's afraid of heights\nFiona: damn, maybe sth you can do together\nAnn: well I was plannig dinner with the whole family, but that's not enough\nFiona: yes, there should be sth special also\nAnn:  I know, but I'm out of \nFiona: Let me think. Nothing with heights but maybe sth on the ground? Racing? Horse riding?\nAnn: ok, it's a good direction. Maybe some team play, we could go with the whole family\nFiona: u said he likes military... maybe paintball? \nAnn: I don't know how my mum will react but I like it :D\nFiona: I guess she's not into military\nAnn: not really, no. But it's dad's birthday so she has to accept it. Thx for the help\nFiona: no problem",
+    "output": "Ann doesn't know what she should give to her dad as a birthday gift. He's turning 50. Fiona tries to help her and suggests a paintball match."
+  },
+  {
+    "input": "Lincoln: Heeyyy ;* whats up\nFatima: I talked to Jenson, he’s not too happy ;p\nLincoln: the place sucks??\nFatima: No, the place is ok, I think, we can go there, it’s about Alene\nLincoln: typical, dont worry about it\nFatima: He thinks she may have a depression :[\nLincoln: nothin new, everyone has it, she needs a doctor then\nFatima: But she won’t go ;/\nLincoln: so she’s destroying her life fuck it its not your problem\nFatima: It is, they’re both my friends!\nLincoln: you better think what to do if they break up\nFatima: Ehh yes Ill have a problem ;//\nLincoln: both blaming each other and talking with you about it, perfect\nFatima: Alene is just troubled… She’d been through a lot…\nLincoln: everyone has their problems, the question is are ya doin sth about them\nFatima: She has problems facing it, don’t be surprised :[\nLincoln: then it is her problem\nFatima: You are so cruel at times… o.O\nLincoln: maybe, for me its just a common sense\nFatima: Why can’t everyone be just happy???\nLincoln: youll not understand, you had good childhood, nice parents, you have no idea\nFatima: Probably, true… Well I can be just grateful o.o\nLincoln: do that and stop worrying about others, youre way to bautful for that <3\nFatima: :*:*:*",
+    "output": "Fatima is worried about Jenson and Alene. Alene has issues. Lincoln doesn't want Fatima to worry about others too much."
+  },
+  {
+    "input": "Lisa: I have to clean the house.\nBob: Yes, it's very dirty.\nLisa: You can help me.\nBob: Why me?\nLisa: Because you helped make it dirty.\nBob: What do you want me to do?\nLisa: I want you to clean the bathroom.\nBob: Oh, that's easy.\nLisa: Clean the sink, the tub, the counter, and the toilet.\nBob: That's a lot of work.\nLisa: Tell me when you finish.\nBob: I don't think so. You'll just give me more work. ",
+    "output": "Bob is going to help Lisa clean the house, he will clean the bathroom. "
+  },
+  {
+    "input": "luke: Hey, was just thinking, we should avail ourselves for team selection tomorrow regardless of our injuries\nmartial: thats what i was thinking also\nluke: we should let Jose know that tomorrow\nmartial: the first thing in the morning infact\nluke: the fixtures are really piling up and we need to help the team\nmartial: yeah, thats for sure, we are a family\nluke: we will the coach know that we are ready to play\nmartial: despite the little pain, me i'm ready\nluke: me too\nmartial: so we meet up at carrington and go to his office very early\nluke: yeah, both of us\nmartial: ok, we'll go together\nluke: cool \nmartial: ok",
+    "output": "luke and martial want to help the team and play despite their injuries. They will meet at carrington and go to the coach's office."
+  },
+  {
+    "input": "Julie: <file_photo>\nEmily: <3 Julie Love, i'm sending tons of kisses :* :* :* 🎄🎄🎄\nJulie: Merry Christmas and a lovely mood throughout  the whole year, darling\nEmily: Thank you, for you too <3\nJulie: Thanks :* <file_photo> <file_photo>",
+    "output": "Emily and Julie wish Merry Christmas to each other."
+  },
+  {
+    "input": "Frederick: do u like ur new next door neighbors?\nFrederick: they seemed really cool yesterday when we ran into them\nRicky: they're nice people but they're incredibly noise\nRicky: they also have parakeet that wouldn't stop squawking all night long hahaha\nFrederick: sucks to be you",
+    "output": "Ricky's new neighbours are nice but loud. They own a parakeet that makes a lot of noise throughout the night."
+  },
+  {
+    "input": "Brenda: Hello, is this Sandra Donovan?\nSandra: Yes, well that was my maiden name, it's Sandra Taylor now.\nBrenda: It's Brenda Riley, we used to work together in the clothes factory!\nSandra: Oh my God! Bren! How are you, it must be 25 years!\nBrenda: I'm fine, I live in Stoke now, moved away from Brum in the late 90s.\nSandra: I still live in Kings Norton, same house, same husband! I've got 4 grandchildren now, ages 2, 4, 9 and 15! How about you?\nBrenda: Unfortunately, my husband Bill died 5 years ago, I have only one grandchild, she's 7, my little angel, she doesn't remember her Gramps. \nSandra: So sorry, love, I remember your Bill, he had long black hair and massive sideburns, didn't he?\nBrenda: Well, yes, about 45 years ago, he was bald when he passed away. He loved to dance, he did Northern Soul, we both did actually. Went up to Wigan on weekends, happy times!\nSandra: Oh yes, I remember that craze, bit energetic for me! We liked disco instead! We had some great dinner dances with the factory, do you remember them?\nBrenda: Yes! Us all dressed up with our long dresses and the men with their frilly evening shirts, lovely memories!\nSandra: Do you still see any of the girls from Lister's?\nBrenda: No, but I heard that Marigold Carter died, very sad.\nSandra: Hey Bren, I've had a brainwave! How about we organise a reunion for the Lister's girls, look on social media for them?\nBrenda: Actually, I was thinking along those lines! Do you fancy meeting up, just you and me? I can come down to Birmingham anytime.\nSandra: That would be lovely! Can you manage it next Saturday? We could meet about 11ish and go for lunch and a good old trip down memory lane!\nBrenda: Oh yes! I'd love that! I'll get back to you about train times soon!\nSandra: Ok! Bye love!",
+    "output": "Sandra and Brenda used to work together in the clothes factory 25 years ago. Sandra still lives in Kings Norton. Brenda lives in Stoke now. Her husband Bill died 5 years ago. They will meet in Birmingham for a lunch next Saturday about 11. They want to organize a reunion for the Lister's girls. "
+  },
+  {
+    "input": "John: wanna go see \"A Star is Born\" on Wed?\nJoan: sorry can't\nJoan: super busy \nJoan: don't have time for anything :( \nJohn: that's a shame\nJoan: I'm free on Thursday\nJohn: I could do Thursday\nJoan: ok! so around 8pm?\nJohn: sure sounds great\nJohn: I'll see where it's palying and send you the details\nJoan: ok great!",
+    "output": "Joan and John are going to watch \"A Star is Born\" on Thursday around 8 p.m."
+  },
+  {
+    "input": "George: Hi Donna. I've been trying to catch you.\nDonna: What about?\nGeorge: A rather delicate matter.\nDonna: Did you catch AIDS?\nGeorge: Very funny!\nDonna: It is, isn't it?\nGeorge: I don't think so.\nDonna: Too bad. So what do you want?\nGeorge: Could we meet and discuss it somewhere?\nDonna: Like where?\nGeorge: Like in a coffee shop or somewhere.\nDonna: You sure a coffee shop is better to discuss delicate matters.\nGeorge: Come to think of it, you are right. It's not.\nDonna: See? So what's up?\nGeorge: Couldn't you come to my place tonight?",
+    "output": "Donna will pay George a visit tonight to discuss a personal matter."
+  },
+  {
+    "input": "Louis: Gotta go, my mom's calling me\nFabian: Ok, see ya\nLouis: See ya",
+    "output": "Louis finishes the conversation with Fabian because his mother is calling."
+  },
+  {
+    "input": "Crystal: <file_photo>\nIrene: He's so big!\nCrystal: <file_photo> \nCrystal: I know right!\nIrene: and so cute!\nCrystal: he got so big he doesn't fit his clothes anymore\nIrene: time to go shopping with my little boy <3\nCrystal: yeah im just gonna go brankrupt\nIrene: Let me take him, I also promise to buy him something\nCrystal: you really wanna do that?\nIrene: why nont? I'm his aunt!\nCrystal: well yeah it's just such a drag\nIrene: you were always a bore when shopping :P just let me take the little man\nIrene: well have fun!\nCrystal: ok ",
+    "output": "Irene will take Crystal's son shopping for clothes."
+  },
+  {
+    "input": "Tony: <photo_file>\nAmy: Sweet little cat <3\nLucas: Adorable!! ",
+    "output": "Tony sent a photo of his cat to Amy and Lucas."
+  },
+  {
+    "input": "Matt: Hey\nMatt: I got my ticket for Dawid Podsiadlo!!!\nMatt: So stoked!\nThomas: Whooaa that's great!!\nMatt: I will see you there then! \nThomas: Yes for sure\nThomas: Remind me before \nThomas: Like the day before k? \nMatt: For sure \nMatt: Who you're going with \nThomas: by myself for now\nThomas: I meant until now haha\nMatt: Right on \nMatt: I am so stoked tho\nThomas: Me too \nMatt: I might ask a few more people if they're coming ;) \nThomas: Maria was interested I think \nThomas: But I am not too sure\nThomas: i will ask her",
+    "output": "Matt got a ticket for Dawid Podsiadlo's concert. Thomas is going, too."
+  },
+  {
+    "input": "Chris: Oh, and we pushed some girls into the pool :)\nJune: That's not nice!\nChris: Depends how u look at it ;)\nJune: How come?\nChris: Well, we got them to undress, 'cause they were soaking wet :)\nJune: Ur awful!",
+    "output": "Some girls had to undress because they had been pushed into the pool."
+  },
+  {
+    "input": "Jeff: Should we go to the village party?\nLia: I'm too tired after hiking\nMico: I'd like to go, there may be some hot boys!\nLia: I doubt\nJim: like a real village boy?\nJim: who doesn't even speak English?\nMico: yes, the dummer, the better\nJim: haha, stupid fucks good, they say\nMico: I confirm!\nLia: not my cup of tea\nMico: I'll go there, who wants to join?\nJeff: I'll go as well\nMico: wanna drive?\nJeff: so you could drink?\nMico: would be nice, hahah\nJeff: not excited, but ok\nMico: thanks!",
+    "output": "Mico and Jeff will go to the village party. Jeff will drive."
+  },
+  {
+    "input": "Paul: hey Matthew did you find anyone to couch the game Saturday?\nMatthew: hey Paul, no still looking \nPaul: my plans changed so I can do it if you need \nMatthew: ahh yes that be great! thank you \nPaul: no problem see you Saturday ",
+    "output": "Paul can couch the game on Saturday as Matthew hasn't found anyone to do that yet. "
+  },
+  {
+    "input": "Luke: my train arrives at 3 pm\nLuke: anyone can pick me up?\nJacob: i am at work till 5\nFred: i can pick you up at 3:15 approximately\nFred: is that ok?\nLuke: yes i will wait! thanks Freddy",
+    "output": "Freddy will pick Luke up at about 3:15 pm."
+  },
+  {
+    "input": "Ryan: You're going to the casting? \nRyan: So you think you can dance 🤩\nJack: I am! \nJack: this time im going\nRyan: U should go really\nJack: I know, wanna come with me? \nRyan: I thought about it! \nJack: Nice well! I will meet you there! 😝😝😝",
+    "output": "Ryan and Jack are going to the casting for a dance show."
+  },
+  {
+    "input": "Joanne: What are your plans for the holidays?\nEvelyn: Nothing. I’ll stay at home and rest.\nJoanne: You must be exhausted after the past few weeks\nEvelyn: It’s been hectic\nJoanne: I’m going back home.\nEvelyn: To France?\nJoanne: Yes. Not that I want to go…\nEvelyn: Why? You always liked spending Christmas with your family.\nJoanne: I did. But my parents separated a few months ago\nJoanne: It is still pretty tense…\nEvelyn: I’m sorry to hear that\nJoanne: My dad left my mum for his secretary\nJoanne: Such a cliché \nJoanne: My mum is devastated\nJoanne: So I’m basically going to cheer her up \nJoanne: It’s really hard for her now\nJoanne: For me it’s also not easy\nEvelyn: I can imagine!\nEvelyn: If you want to bring your mum over here we could spend Christmas together.\nJoanne: Thanks, that’s really sweet. But I don’t think she’s in a condition for that. She’s been very depressive lately. ",
+    "output": "Joanne is going to go back home to France for the holidays. She's going to cheer her mum up because her parents separated a few months ago. Evelyn offers Joanne to spend Christmas together if she brings her mum over here. "
+  },
+  {
+    "input": "Carla: Hey\nCarla: how are you today?\nRaul: not too well\nCarla: what's wrong? did you sleep?\nRaul: it was a really crappy night\nRaul: and yesterday evening\nRaul: and today morning\nRaul: i started off with a fag\nRaul: i don't even know what triggered me off \nRaul: yesterday Jen had to go to a friend\nRaul: she'd broken up with her bf and Jen went to sit with her\nRaul: and she stayed for the night\nRaul: so i thought it's be a good evening just for myself\nRaul: but i was just so pissed off all the time\nRaul: and then i had those weird dreams of my uncle\nCarla: shit ;/ sounds awful\nRaul: yeah it was :/\nCarla: ;*",
+    "output": "Raul's had a bad night and day. "
+  },
+  {
+    "input": "Angie: Hello. I'd like to make an appointment. \nMs. Quinn: Hello. Of course. What's your medical issue?\nAngie: It's kind of private...\nMs. Quinn: I understand. No chats are recorded. And I need to know what you're coming in with to direct you to the correct doctor. \nAngie: Well, fine. I have severe stomach pain.\nMs. Quinn: When did it start?\nAngie: Like an hour ago. I took some pills but to no avail. \nMs. Quinn: I understand. Do you have your doctor?\nAngie: Yes. Doctor Cartman.\nMs. Quinn: He's not in today. Doctor McCormick can see you in an hour. Will that be fine?\nAngie: Yes, thank you. I'm on my way.\nMs. Quinn: I've signed you up and I'll tell the doctor you're coming. ",
+    "output": "Angie's having an appointment with Doctor McCormick in an hour. She has strong abdominal pain."
+  },
+  {
+    "input": "Kelvin: Excuse me Miss. When do we sit for our CAT 2?\nNaheeda: Can we have it during the statistics class?\nKelvin: I don't think so because we will be having the statistics CAT.\nNaheeda: Okay it is up to you guys to choose the time then.\nKelvin: Okay. Wait I will talk with the other class members then I'll tell you their decision\nNaheeda: Okay then don't take too long.\nKelvin: Sure",
+    "output": "Kelvin and the other class members will discuss the time for their CAT 2 and share their decision with Naheeda soon."
+  },
+  {
+    "input": "Linda: hey have we decided on a lunch place yet?\nRonnie: thought we were going for sushi\nLinda: Karen said she hates raw fish or something\nKaren: nah I'm ok with sushi, just thought we would go for smth cheaper this time ;p \nKaren: hard times are a-coming xd\nRonnie: been craving sushi all week long :( but i sooo get, K, maybe we should dial it down with the fancy places\nLinda: hey there is this pasta joint right next to our apartement\nLinda: you get it in like takeout boxes. we could take these out to the park\nRonnie: so down with that!\nKaren: same here! let's wait for Amanda tho\nLinda: @Amanda are you ok with pasta for lunch?\nRonnie: let's hope she checks her fb this time haha\nAmanda: hey guys, yes! whatever works for me :)",
+    "output": "Karen wants something cheaper than sushi for lunch. Linda, Ronnie and Karen will get takeout pasta boxes to the park."
+  },
+  {
+    "input": "Marty: Hiya, I have a favour to ask... can you pick up Marcel from school?\nChristine: Sure, you ok?\nMarty: Not really, I think I have sprained my ankle...\nChristine: Oh no, have you seen see a doctor?\nMarty: I was gonna see how it went today and might go tomorrow...\nChristine: Are you sure? I'm happy to take you now if you want?\nMarty: Nah, it can wait, that'll leave us in trouble with the kids...\nChristine: OK, I'll pick up Marcel then.\nChristine: Do you need anything from the shops or something?\nMarty: No we are good thanks. we'll have pizza night, Marcel can sort us out...\nChristine: I'm on a late shift tomorrow, shall I take Marcel in tomorrow morning? I'll take you to the doctor afterwards if you want?\nMarty: That would be awesome, thank you for your help...\nChristine: No problem, you'll have to call the school though.\nMarty: Good one, will do that now...\nChristine: See you around 4.\nMarty: Thank you so much!",
+    "output": "Marty thinks she has sprained her ankle. Marty wants to go to the doctor tomorrow. Christine will pick up Marcel from school today. Tomorrow Christine will take Marcel to school and Marty to the doctor. Marty will call the school. Christine and Marty will meet around 4. "
+  },
+  {
+    "input": "Peyton: I have been asking you to bring that video game for me\nCameron: Honey, I am not having enough time to come home\nPeyton: When would you come home?\nCameron: I will have to stay out of town for another week i guess\nPeyton: Cant you just deliver that game through the courier? :P\nCameron: Dont be mean :/\nPeyton: Get the job done and come to home then. ASAP :P",
+    "output": "Peyton is expecting Cameron to bring the video game. Cameron will probably be out for another week."
+  },
+  {
+    "input": "Willyx: how did your job interview go?\nAlicja: it's tomorrow :D\nWillyx: sorry\nAlicja: it's ok :)\nWillyx: let me know how it went\nAlicja: sure",
+    "output": "Alicja's job interview is tomorrow. She will inform Willyx how it goes."
+  },
+  {
+    "input": "Paul: I just came back home\nPaul: What a busy day\nPaul: I forgot about my physiotherapy \nEmma: Oh no\nPaul: It's ok, I'll schedule a new appointment\nEmma: I'll be home after midnight\nPaul: Do you want me to prepare some food for you?\nEmma: That would be lovely",
+    "output": "Paul forgot about his physiotherapy and he will schedule a new appointment. Emma will be home after midnight, so Paul will prepare some food for her."
+  },
+  {
+    "input": "Sean: I overslept :/\nSam: Again??\nSean: I know.",
+    "output": "Sean overslept again."
+  },
+  {
+    "input": "Chris: <file_photo>\nChris: Maybe not he best photo XD\nChris: and im the middle one here\nChris: and you can bring swimming trunks as well because there's opportunity to go to jacuzzi in our garden :))\nTom: a jacuzzzzzi????\nChris: oohhhh yeeaahh\nTom: O my godddd.\nTom: Is it big enough for a few people? I feel I woul feel wierd out there on my own :)\nChris:  Yeee, for 5-6 people no problem.\nTom: So you and your brother will join me? :D\nChris: Yes hahaha meybe we can invite someone else or only our little group.\nChris: An maybe watch sth on TV or just make a conversation hhahaha\nTom: Wait you've got a tv outside????\nChris: well we can bring it there :P\nChris: From our living room\nTom: Do you have WiFi?\nChris: Yes\nTom: Nice, I only get 6GB on my phone when I get outside Ireland\nChris: Yeah, kind a low amount\nTom: Can't wait!\nChris: Me too! :)",
+    "output": "Chris and Tom are planning a meeting at Chris' place. Chris has a Jacuzzi in his garden. Chris has WiFi and can bring his TV outside. Tom has a low internet limit whenever he's outside of Ireland."
+  },
+  {
+    "input": "Harry: heyyyy are you there??\nCindy: Yes dear what is it?\nHarry: Can you call Ela and tell her i need to talk urgent please pick my call.\nCindy: what happened now? an other fight :O\nHarry: please tell her\nCindy: MAN! you guys... am i some kind of a messenger service here?\nHarry: PLEASEEEEEEEEE ?\nCindy: ok doing.... but thats the last time.\nHarry: Yes like always:P\nCindy: Hate you seriously man.\nHarry: Thank you\nCindy: Done you can call her now.",
+    "output": "Ela is not taking Harry's phone calls. Cindy calls Ela at Harry's request."
+  },
+  {
+    "input": "Adam: Did you take the dog for a walk?\nMike: No, I did not have time,\nAdam: Ok, I'll take him with me.",
+    "output": "Mike didn't have time to take the dog for a walk, so Adam will take it with him."
+  },
+  {
+    "input": "Sophie: When r u going to Poanań?\nMurphy: On Tuesday. \nSophie: And you're coming back the same day?\nMurphy: Yes, in the afternoon, but I don't know the exact hour. ",
+    "output": "Murphy is going to Poanań on Tuesday and coming back on the same day in the afternoon."
+  },
+  {
+    "input": "Monica: How are you doing?\nGaia: I'm fine, mum.\nMonica: All good at the university?\nGaia: A lot of work, but all good.\nMonica: I guess you'll have a lot of exams this term\nGaia: 6\nGaia: But only one is really hard ",
+    "output": "Gaia has 6 exams this semestre. One is very difficult."
+  },
+  {
+    "input": "Mr. Williams: Ms. Blair, would you like to go for a coffee?\nMs. Blair: I thought you'd never ask.\nMr. Williams: That's outstanding. Do you have a favourite coffee place?\nMs. Blair: I actually do. It's near the square in a side alley.\nMr. Williams: I think I know which one. Let's say 2 p.m.?\nMs. Blair: Sounds great. See you there :)",
+    "output": "Mr. Williams invites Ms. Blair for a coffee. They will go to her favourite coffee place near the square in a side alley at 2 p.m."
+  },
+  {
+    "input": "Serena: Have you been to the doctor lately?\nJeff: No, why?\nSerena: Just wondering what he says about your skin condition?\nJeff: It's fine right now. \nSerena: That's good!\nJeff: The cold weather sets it off and if I eat too much of the wrong foods, but otherwise fine.\nSerena: So you don't have to be on meds?\nJeff: Not all the time. Why?\nSerena: Tina has the same thing and takes meds on the daily.\nJeff: She must have a different kind than me or a worse kind.\nSerena: I guess so.\nJeff: It sucks, but it doesn't have to be every day.\nSerena: That's good. I'll tell her. That will cheer her up!\nJeff: Good! Tell her to hang in there. She can call me if she has any questions.\nSerena: Thanks!",
+    "output": "Serena's skin condition is fine now and she doesn't have to take medication. Tina has a similar condition but takes medication on a daily basis. Tina can call Serena if she has questions. "
+  },
+  {
+    "input": "Kristina: Girls!\nKristina: America's top model \nKristina: on tv\nKristina: Watching? \nJannette: omg\nJannette: Im not home yet\nKristina: New season ye!!\nEstefania: Hmm \nEstefania: yeah Im watching this rn \nKristina: Tyra Banks\nKristina: She never gets old\nEstefania: I wanna look like her haha\nJannette: K I just got home \nJannette: Had to run \nJannette: <file_photo> \nEstefania: Hahaha",
+    "output": "Kristina, Estefania and Jannette are watching America's Top Model."
+  },
+  {
+    "input": "Marco: Are you coming to Bologna this fall?\nDaniel: accidentally, I am flying today thought Bologna but only became I have to change there\nMarco: wow! how long will you stay at the airport?\nDaniel: 2 hours only\nMarco: ok, that may be too short for me to see you\nSimone: I may come in December for a weekend, if you want to host\nMarco: with pleasure! and always, as I always tell you :)\nSimone: great, I'll let you know",
+    "output": "Daniel is going to Bologna today. He has to transfer there for a further flight. He will stay at the airport for two hours. Simone will visit Marco in December."
+  },
+  {
+    "input": "Mike: will call u back in 2 hrs, ok? \nMike: can't talk right now, sry\nMike: *sorry\nDale: cool, no problem\nDale: until then",
+    "output": "Mike will call Dale back in 2 hours."
+  },
+  {
+    "input": "Gemma: How's it going?\nTimmy: A bit down 2day.\nGemma: Y?\nTimmy: Oh, bad day at work. Can u imagine? Boss snapped at me!\nGemma: That bitch! What did u do?\nTimmy: Nothing. Minding my own business, doing work stuff and suddenly starts shouting and screaming. Doesn't matter. How about u?\nGemma: Well, I think this might cheer u up a bit :)\nTimmy: What is it?\nGemma: I'm organising a bbq at the weekend :) wanna come?\nTimmy: Love to! What do I bring?\nGemma: Some wine will be fine.\nTimmy: What about food?\nGemma: Others and I will cover it.\nTimmy: Others? I thought it was a date :P\nGemma: U remember I have a bf, right?\nTimmy: Yeah. Just messing around ;) how many ppl?\nGemma: Don't know yet. ",
+    "output": "Timmy had a bad day at work. Timmy will bring some wine to Gemma's bbq at the weekend."
+  },
+  {
+    "input": "Pat: Hi, it's Pat here. I have a slight delay, a couple of hours, so I will come in the evening, around 9pm. I hope it is not a problem...\nBart: Hi, no, not at all :) you didn't catch the train?\nPat: hehe, no. I thought today i was free from work, but i got another project to finish. So i will be tomorrow morning. Im sorry for those changes, i myself am surprise.\nBart: hahaha a tiny regret. Will you manage to get here on your own?\nPat: yeah, its ok. what would you suggest? if you could come and unlock the door, it would be great, but i can walk around the city as well.\nBart: of course I will open it for you. I can work in the morning from home. No problem. So we see each other tomorrow?\nPat: Thank you so much! haha\nBart: Are you a painter?\nPat: I hope I will eventually get in that train. Nope.\nBart: I thought you were.\nPat: this project is a stage project :)\nBart: Ah alright, youll tell all about it tomorrow :))\nPat: OK,, later",
+    "output": "Pat will arrive at around 9 pm. Bart will open the door and work in the morning from home. "
+  },
+  {
+    "input": "Erin: hey what's up. what you're doing today? Would you find some time to do the interview? :)\nAshley: Hi! I’m free whenever\nErin: Great, are you at the camp?\nAshley: Yep, I’m here now.\nErin: Ok I can come over there\nAshley: Sounds good. Just shoot me a message and we can meet at the pool or restaurant\nErin: Alright!\nErin: Is the wifi good today?\nAshley: Yeah pretty decent, but usually it's less spotty in the restaurant area\nErin: Ok I see, so the restaurant it is\nAshley: Alright\nErin: I'm on my way!\nAshley: I'm sitting in the back",
+    "output": "Erin will meet Ashley in the restaurant for the interview. "
+  },
+  {
+    "input": "Maria: hey guys!\nMaria: everything ready for the conference?\nKate: yes, almost\nTommy: I think we will have a good panel\nSam: I really hope there will be some people\nTommy: we should have good audience\nMaria: Are you preparing a power point?\nTommy: I'll have a prezi\nMaria: you're paying for it?\nTommy: it's good, worth the money\nMaria: how much is it?\nTommy: I believe $10 a month for academics\nMaria: not that bad",
+    "output": "Maria, Kate, Tommy and Sam are going to a conference. Tommy will use Prezi instead of Power Point. He has a Prezi subscription for $10 a month."
+  },
+  {
+    "input": "Maxwell: Thank you for tonight, payment as usual?\nJeanice: Yes, 8 hours\nMaxwell: What would I do without you…\nJeanice: That’s my job :D\nMaxwell: But you can do your job good or bad… I’m grateful I found you\nJeanice: Me too, our cooperation is very good ^^\nMaxwell: And the kids… They really like you\nJeanice: I know, they’re cute\nMaxwell: Wait, I heard there was some problem with Marcus at school…\nJeanice: Nothing very serious, he argued with a friend but they didn’t fight\nMaxwell: Oh, ok, the teacher sounded like it was something terrible\nJeanice: In a way it was, he didn’t want to stop when a teacher reacted and he was pretty aggressive\nMaxwell: That’s worse… Have you noticed him behaving in a strange way recently?\nJeanice: Not at all, cute as usual. But… he gets very angry for stupid reasons\nMaxwell: For example?\nJeanice: You know, his sister taking sth from him… He’s not aggressive but more… loud than usual, if you know what I mean\nMaxwell: Yes, I understand, I need to do something about it. Anyway, thank you for informing me.\nJeanice: No problem Mr. Hall, I’m always here to help ;)\nMaxwell: We could grab a coffee some time and talk through all the issues.\nJeanice: Yea, maybe, I have to go,  I'll let you know\nMaxwell: OK, thanks, you're the best :)",
+    "output": "Maxwell pays Jeanice for 8 hours of babysitting and is grateful he found her. His son argued with a friend at school, and got agressive when the teacher reacted. Jeanice hasn't noticed if he has acted strangely recently. Maxwell and Jeanice can grab a coffe some time to discuss all the issues. "
+  },
+  {
+    "input": "Mike: Let's go for a beer\nTom: Now?\nMike: Yes\nBen: Ok",
+    "output": "Mike, Tom and Ben will go for a beer."
+  },
+  {
+    "input": "Leah: i've just met the creepiest guy on the earth :|\nSamantha: :o i'm all ears\nLeah: last night i went to the poetry reading\nLeah: this guy approached me, introduced himself and we started talking\nLeah: he was rly boring, but, you know, i didn't want to be rude, he didn't seem to be a psycho, so i kept talkig to him\nLeah: at one point he mentioned that \"we have something in common\", because we both speak german\nSamantha: charming :D\nLeah: i was like: \"erm, ok, how do you know about this, i don't know you, i didn't tell you about this\"\nLeah: he just brushed it off and kept talking\nLeah: at one point he asked me about an event i had attended and he NAMED ALL OF MY FRIENDS THAT HAD COME WITH ME\nLeah: of course i didn't tell him about it\nSamantha: wow, that's creepy as hell\nSamantha: what did you do?\nLeah: i asked him once again how did he know about all this stuff and he said that he googled me out\nSamantha: WHAAAAT?\nSamantha: i googled people out before, but i’m not that stupid (and creepy) to tell them about it :o\nLeah: right?!\nLeah: and now the best part\nLeah: he googled me out, because he thought that i had a crush on him, because 2 weeks earlier  I LIKED A POST ON FB announcing that he was going to accompany poets on the guitar during the poetry reading\nLeah: can you believe this?!\nSamantha: LOOOOOOL\nSamantha: men are fckin weird\nLeah: AND he tried to walk me home, even though i told him straightforward that he was a creep\nSamantha: girl, you're lucky that he didn’t kill you, what a psycho\nSamantha: i would totally freak out",
+    "output": "Leah met a creepy guy last night at a poetry reading. He knew she speaks German and named all the friends who went to a past event with her. She didn't tell him any of this. He googled her before. Leah had liked a post mentioning him 2 weeks earlier. "
+  },
+  {
+    "input": "Dave: Hey, is Nicky still at your place? Her phone is off\nSam: She just left\nDave: Thanks!",
+    "output": "Nicky has just left Sam's place. Her phone is off."
+  },
+  {
+    "input": "Ken: Fuck you, you pimp\nGreg: What?\nKen: Fuck you man, I want my money back\nGreg: Was your account hacked by some prankster?\nKen: No, I'm the prankster, just having a laugh at your expense\nGreg: Well, fuck you too then XD",
+    "output": "Ken is trying to play a prank on Greg."
+  },
+  {
+    "input": "Alexander: Personal request to send me message when you will be in taxi\nAlexander: If any problem, call me\nTom: ;)\nTom: Thank You, I appreciate it\nAlexander: Taxi confirmation below\nAlexander: <file_photo>\nTom: Thank you for the transport, we arrived safely, although without luggages :/\nAlexander: Good but bad\nTom: Yeeees",
+    "output": "Tom arrived safely, but without his luggage."
+  },
+  {
+    "input": "Asher: Have you seen there're 5 (!) bouncy castles in the hall?\nAsher: And a HUGE bouncy dragon!! :o\nAsher: <file_photo>\nShane: wow! :D it looks fantastic :o\nAsher: What’s the occasion?\nShane: the university organised a carnival party for children :)\nShane: or at least this is what i heard in the dean's office\nAsher: That's so cool! :>",
+    "output": "The university is throwing a carnival party for kids."
+  },
+  {
+    "input": "Ian: Honey, do not you know where my green folder is?\nSophie: Green?\nSophie: I have no idea.\nIan: I was sure I left it on the dining room table.\nSophie: Maybe Alex put it somewhere.\nSophie: Ask her.\nIan: ok, thx :*",
+    "output": "Ian is looking for his green folder. Sophie hasn't seen it but maybe Alex will know."
+  },
+  {
+    "input": "Adrian: Can you talk?\nSimon: Not really, anything important?\nAdrian: Not that much.\nSimon: I'll be free at 5\nAdrian: i'll you then",
+    "output": "Simon will talk to Adrian in 5 minutes."
+  },
+  {
+    "input": "Jen: I think I'm through with the dickhead. He's being a pain again. I'm going to tell him to move out.\nJane: Did he at least give you back the money he owes you?\nJen: No. He's freeloading and said he has no intention of giving back my money because I don't deserve it with the way I act.\nJane: He has a nerve doesn't he? How dare he?!!!\nJen: I've learnt to hate him with a passion. He's like vermin that you can't cull.\nJen: Abusive, nasty, annoying, irresponsible. He disgusts me.\nJane: Get rid of him! I told you right from the beginning that he's no good.\nJen: Yeah you were absolutely right.. as always.\nJane: I hate to say it but I can smell a fucktard a mile away.\nJen: I seem to pick them, don't I?\nJen: Sometimes I think it is my fault. If only I could be a better person, if only, if only....\nJane: You know that way of thinking will get you nowhere fast. It's self defeating. That's what the abusers want you think that you're bad and you deserve every bit of abuse that they dish out.\nJen: What if he doesn't leave? I'm afraid of asking him to leave 'cause it will only cause another fight.\nJane: You can't spend your whole life walking on eggshells.\nJen: Yeah, you're right... but how do I get out of this mess?\nJane: I think you've got to cut your losses and just move on.\nJen: Easier said than done.\nJane: I know. You've gotta do it Hon. If you don't things will only get worse. Think of how much worse they've already got since you met him.\nJen: Yeah you're right. Sometimes I just don't have the strength. \nJane: I believe in you. Please do it! Remember I'm always there for you.",
+    "output": "Jen is about to break up with her boyfriend. Jane knew from the beginning that they were not a good match. Jane is going to support Jen."
+  },
+  {
+    "input": "Dean: Hey sweetheart\nDean: What's for dinner tonight :D\nPoppy: Hey\nPoppy: Dunno?\nDean: What do you mean you dunno :D\nPoppy: Well, I'm not preparing anything tonight\nPoppy: So I dunno\nDean: Nooo whyy I'm starving\nPoppy: Grab something on the way back home\nDean: I guess I will!\nDean: What would you like me to get for you? :*\nPoppy: Nothing I won't be home tonight\nDean: ???\nDean: You won't?\nPoppy: Yeah I won't\nDean: What's up?\nPoppy: Nothing\nPoppy: I'll see you tomorrow\nDean: Where are you going to be tonight then?\nPoppy: Not telling\nDean: :O\nDean: Why\nPoppy: Because it's a secret\nPoppy: :O\nDean: :O\nPoppy: :O",
+    "output": "Poppy is not going to be home tonight but she won't reveal the reason to Dean. She won't be making dinner so Dean has to get something on his way home."
+  },
+  {
+    "input": "Gab: Ah that's better. Now we can message all we like.\nKat: :-)\nGab: So when can we meet up for a drink?\nKat: Fairly busy at the moment so I'm not sure when.\nGab: I'd love to meet you in real life.\nKat: I don't meet strange men from the internet.\nGab: Why not?\nKat: Not that sort of gal.\nGab: But you're talking to me, aren't you?\nKat: Yes, but that's different.\nGab: How so?\nKat: Just is.\nGab: But it would be so much nicer to do this cuddled up right next to you...\nKat: I think this was a mistake.\nGab: Are you there?\nGab: Where did you go?\nGab: Kat?",
+    "output": "Gab wants to meet Kat in real life. Kat doesn't like Gab's insisting so she won't to talk to him at all."
+  },
+  {
+    "input": "Agatha: My presentation is ready as we speak :)\nAdam: oh cool, what course?\nAgatha: Economics.\nAdam: Is it interesting? I mean... your presentation.\nAgatha: Definitely, I used recent research.\nAdam: Sounds like you know what you're doing :P\nAgatha: I'm just really into economics :)\nAdam: no doubt about that",
+    "output": "Agatha is proud of herself because she has finished her presentation in Economics. She is very interested in Economics."
+  },
+  {
+    "input": "Sally: Hey! Imagine Dragons are coming to us!\nTim: So I've heard.\nSally: And you didn't tell me?! \nTim: Come on. It's just a band...\nSally: It's not JUST a band, you jerk!\nSally: <file_video>\nSally: I've already checked the ticket availability. There are still some tickets for the standing area at our ABC Theatre. Shall we go together?\nTim: How much are they?\nSally: 70\nTim: When is the gig?\nSally: 12 July\nTim: Well, I may go.\nSally: Your enthusiasm is infectious, really... Try inviting me for some sports events and you'll see how happy I'll be.\nTim: Ok! Let's go! It'll be an unforgettable evening!\nSally: Jerk! I've aready bought the tickets, so put it in your diary\nTim: Done. ",
+    "output": "Imagine Dragons have a concert at ABC Theatre on 12 July. Sally wants to go with Tim. She bought tickets, they cost 70."
+  },
+  {
+    "input": "Andrew: Hello Bez, this morning I wanted to take your car and go to Krizingen but it showed \"low  brake fluid level\". So I went only to the garage next to Willig and they said it's ok, probably a display error. Do you want me to have the car checked properly? Have you got a contract with some garage in particular?\nAndrew: Kate took your car today, just to check, and everything was fine. It must have been in fact display error.\nAndrew: Hi Bez, when are you back? What date?\nBez: Hello Andy and Kate! Sorry for not replying immediately. We have here no wifi internet connection. I'm in a hotel lobby now and use a \"phone credit\".\nBez: The car should be ok as it passed general inspection only in June. I usually go to a garage in Crinch. But don't bother as long it shows no more alarms.\nBez: Apart from that is everything alright? Automatic lights going on and off? One downstairs, one upstairs.\nBez: Please don't forget to give the plants in the basement an occasional drink! Thank you.\nBez: I'm home on the 21st in the evening. Could you please switch the heating on a bit on that day?\nAndrew: Hello Bez, just as we thought. No internet. Everything is fine here, also the car. The plants in the basement are watered once a week but not too much.\nAndrew: <file_photo> Your natal lily has just started to flower.\nAndrew: and look at this:\nAndrew: <file_photo>\nAndrew: Greetings from your frost-bound garden!\nBez: Thank you Andy!",
+    "output": "Andrew has discovered an issue with Bez's car in her absence but it seems to be ok. He will also take care of her plants until she is back on the 21st. "
+  },
+  {
+    "input": "Keith: Hi there kiddo, when are you planning to visit you old parents? :)\nLaura: Hey Dad, I'm not sure yet. I've been pretty busy recenlty.There is this big project coming…\nKeith: Oh, I understand, all work and no play…XD\nLaura: Daad! Don't be mean! You know I treat studying seriously!\nKeith: I know, you take after your mum :) By the way I think she bought some b-day gift for you…\nLaura: Next Saturday it is then :D \nKeith: I'll tell mum, she'll be really happy:)\nLaura: And please cook your lasagne!  I miss it  so badly …\nKeith: I'll se what I can do Pumpkin, le'ts stay in touch :)",
+    "output": "Laura is going to visit her parents next Saturday. Keith might make a lasagne for her. Laura's mom has a birthday gift for her. "
+  },
+  {
+    "input": "Miriam: heyo\nMiriam: when do you get back?\nPegah: hey hey\nPegah: I'm in class till 15:00 and then I work from 17:00 till about 21:30\nPegah: so I'll be back at 22:00 D:\nMiriam: oh damn\nMiriam: that's late!\nPegah: I know :( but I need as many shifts as possible\nPegah: I'm gonna be a zombie all week :(\nMiriam: ok, well I asked coz I invited a few people over\nMiriam: and was hoping you would be there too\nPegah: awwww\nPegah: well I can have a cup of tea with you when i get back lol\nMiriam: I'll save you some wine as well :) ",
+    "output": "Pegah is in class till 15:00. She will work from 17:00 till around 21:30. She will be back at 22:00. Miriam invited people over and wants Pegah to come. Pegah will have a cup of tea with her when she gets back. Miriam will save Pegah some wine."
+  },
+  {
+    "input": "Pam: Hey Robert, you said you cold help with Tom's birthday?\nRobert: Sure, what do you need?\nPam: I have to go shopping, cook and clean and I figured out I don't have time to pick up the balloons\nRobert: from where?\nPam: there this store in the city centre that sells these awesome floating balloons\nRobert: No problem just text me the address\nPam: bless you!\nRobert: ;)",
+    "output": "Robert will pick up floating balloons for Tom's birthday."
+  },
+  {
+    "input": "Shelly: This year I'm volunteering at the food shelter!\nTracy: Good 4 u!\nJody: Gr8!\nShelly: How about u? Any volunteer work?\nTracy: Nah. Not into that.\nJody: Sure! Every year I do some charity 4 Xmas :)",
+    "output": "Shelly is voluntering at a food shelter and asks if others do some volunteer work. Tracy is not into that, but Jody always does some charity for Christmas."
+  },
+  {
+    "input": "Max: I know I will never be famous music producer\nMax: But check this out\nMax: My latest project\nMax: <file_other>\nJim: I'll listen to it when I get home.\nJim: Knowing you I'm sure it's good.\nMax: Thanks\nMax: Let me know what you think later\nJim: I will",
+    "output": "Jim will check out Max's latest music project when he gets home."
+  },
+  {
+    "input": "Kane: have you heard the new 30 seconds to mars album?\nShannon: no, is it good?\nKane: you should so check it out\nShannon: ok thanks for the recommendation\nKane: no prob",
+    "output": "Kane recommends the new 30 Seconds to Mars album to Shannon."
+  },
+  {
+    "input": "Andy: Hi nephew!\nPaul: Hi uncle!\nAndy: Are you home? I'm nearby and thought I would drink coffee with you :)\nPaul: Yup. I'm home. Feel free to come!\nAndy: If that is ok I will visit you in about 1 hour. \nPaul: Sure. A lot of political cases for us to talk about :D\nAndy: Haha. No.\nAndy: Too much politics with Hannah's father.\nAndy: I have enough arguments over politics forever.\nPaul: Hahah. Ok. Waiting for you then.\nAndy: See you.",
+    "output": "Andy is going to visit Paul in about 1 hour."
+  },
+  {
+    "input": "Caroline: \"I am this close to tugging on my testicles again\"\nMegan: Friends, right?\nCaroline: Bravo! Who said it?\nMegan: Ross or Chandler... Ross!\nCaroline: <file_gif>",
+    "output": "Caroline and Megan play a guessing game - they need to guess which film a quote comes from."
+  },
+  {
+    "input": "Ron: check your email :P\nJosh: what did u send me?\nRon: sth you want to have.  \nRon: Check :D :D",
+    "output": "Josh should check the email from Ron. "
+  },
+  {
+    "input": "Phil: can you go out today?\nPhoebe: no\nPhoebe: my mum is still angry\nPhil: why?\nPhoebe: i used her perfume\nPhil: so what?\nPhoebe: i used it and broke it\nPhil: really?\nPhil: xd lol\nPhoebe: not funny\nPhoebe: it was very expensive\nPhoebe: besides, our whole house stinks\nPhil: so it was not so beautiful perfume?\nPhoebe: it was, but not 100 ml for 80 square meters",
+    "output": "Phoebe cannot go out today because she broke a bottle of her mother's expensive perfume. Phoebe's mother is angry. The smell of the perfume in the apartment is too intense now."
+  },
+  {
+    "input": "Rob: Are we meeting up 2morrow?\nEve: How about Sunday\nEve: stores are open so we can go then\nRob: Ok I just don't know what time they close\nEve: we have ot go in the moring \nEve: I have some stuff to do around 3\nRob: ok",
+    "output": "Rob and Eve will meet on Sunday morning to go to the shops. Eve has something to do at about 3. "
+  },
+  {
+    "input": "Betty: <file_photo>\nSandra: Hahaha!\nBetty: This guy has totally nailed it!\nSandra: I have a special place in my heart for men that take care of animals.\nBetty: I know! He and his cat look so cute!\nSandra: Haha! I'm sure he could've taken good care of us too!\nBetty: :) :) :)\nBetty: Sandra you naughty girl!\nSandra: Oh stop it. We both know that you think that too.\nBetty: Maybe a little.\nSandra: Btw, my ex just messeged me. He said he had been thinking about our split-up recently and he stated that it had been a mistake.\nBetty: Seriously?! After 3 months?\nSandra: Yeah. The worst thing is that I think that too :(\nBetty: You are not thinking of getting back to him are you?\nSandra: ...\nBetty: Come on! He was such a jerk back then! Don't you remember how sick you felt when he left you?\nSandra: I know but\nBetty: No buts! I'll be at your place at 6. I'll bring the wine!",
+    "output": "Betty shares a photo of a man with a cat with Sandra. Sandra's ex wants to get back. She misses him. Betty comes over with wine at 6."
+  },
+  {
+    "input": "Anna: Still, great app! And it's for men too! U choose ur sex and then add photos of clothes :)\nPeter: Is there a minimum number of clothes I should add?\nAnna: No! And there is no maximum! You can add as many as u want!\nPeter: So if I only add 3 items, I will always get the same results?\nAnna: Ur still making fun of me!\nPeter: I just don't get it. Every morning I approach my wardrobe, open it, choose the clothes I want to wear or prepare them the previous day and that's it. I don't need an app to tell me what to wear with what.\nAnna: Okay... Let's play a game. \nPeter: You're not going to make me cut my fingers off?\nAnna: No ;) how many pairs of trousers do u have?\nPeter: 5 or 6.\nAnna: How many shirts do you have?\nPeter: T-shirts or regular shirts?\nAnna: Shirts. Let's focus on ur work look.\nPeter: 3 or 4.\nAnna: What about jackets?\nPeter: 2.\nAnna: Great! Now imagine I have 12 shirts, 10 pairs of trousers, and 6 jackets. And I have to decide what to wear in a split second.\nPeter: All right. It's slowly dawning on me. ",
+    "output": "Anna likes a new app in which you can virtually try on clothes. Peter is not quite convinced it is necessary."
+  },
+  {
+    "input": "Dan: <file_photo>\nHulk: omg! Did it hurt?\nDan: no. I got an injection with anaesthesis. But its not working any more and it hurts:(\nPete: you're quite swollen\nDan: Its nothing compared to yesterday!\nHulk: you're kidding\nHulk: were you even more swollen than this?\nDan: Yes\nPete: Jesus",
+    "output": "Dan's had an injection with anaesthesis because he got swollen. He feels it's not working though and it still hurts him."
+  },
+  {
+    "input": "Judah: Hello\nArchie: Hey\nJudah: So what time are you arriving from Southampton?\nArchie: Around midnight; I'll be travelling to yours by bus, so it might take an hour or so\nJudah: No worries. Call me on the phone if I happen to be dead by the time you get here\nArchie: Lol Will do!",
+    "output": "Archie is arriving from Southampton around midnight. He will travel by bus. He will call Judah."
+  },
+  {
+    "input": "Biwott: Did you watch the series I told you\nChloe: No not yet.\nChloe: I have been busy this week but I will watch it during the weekend\nBiwott: 👍",
+    "output": "Chloe will watch the serious recommended by Biwott at the weekend."
+  },
+  {
+    "input": "Lauren: ladies, i'm thinking of getting a tattoo\nNelly: oh cool i'd love to get one too\nTessie: ru thinking of sth specific?\nNelly: neh, probably i won't get one ever. i'm afraid of pain\nLauren: i'd like to get sth small on my leg.\nTessie: where exactly?\nLauren: above the ankle. sth small. a bird?\nTessie: i know a couple of guys who do it. let me know\nLauren: gr8. i'm like 87% sure yet",
+    "output": "Lauren want's to have a small tattoo above her ankle."
+  },
+  {
+    "input": "Wendy: I think the upstairs toilet might be blocked.\nDavid: Oh NO! NOT AGAIN!\nWendy: I'm not sure if it is but it is not draining very well.\nDavid: Then it probably is blocked.\nDavid: You haven't like flushed any tampons or pads down there?\nWendy: Of course not!\nWendy: I know not to do that.\nWendy: Do you think I'm that stupid?\nDavid: Didn't say that. I was just checking.\nDavid: That toilet is a major issue ever since we got the house.\nWendy: Yeah, where are the good old days of renting where you ring the landlord and it is his problem! :-P\nDavid: Hahaha! True!\nDavid: Did you call the plumber already?\nWendy: No. I don't think we can afford to pay the plumber this month.\nDavid: Fuck! Don't you have anything left in the kitty?\nWendy: Well I did but then it was my sisters birthday and I had to get a present...\nDavid: So, what are we supposed to do now then?!\nWendy: Wait until next paycheck? Fix it ourselves?\nDavid: Great :-/  just fucking great. grrr!",
+    "output": "The toilet upstairs is blocked again. Wendy and David can't afford the plumber as Wendy spent the money on her sister's birthday present."
+  },
+  {
+    "input": "Kaylen: In ur country there is  left-hand traffic?\nRowen: Yes we drive on the left\nKaylen: Hehe ok\nKaylen: <file_photo>\nRowen: You look gorgeous!\nKaylen: Thank you. I'm sure I wouldn't be able to drive there then\nRowen: Haha. You're welcome\nKaylen: Or I would have to close my eyes while driving hahhaha\nRowen: Hahaha",
+    "output": "Kaylen wants to know if there is left-hand traffic in Rowen's country. He confirms there is. She thinks she wouldn't be able to drive there."
+  },
+  {
+    "input": "Tom: I have to go there:\nTom: <file_other>\nJonathan: this is insane, you know it, right?\nTom: I know, I love insane things\nOscar: are you kidding?\nTom: not at all\nOscar: I'm not spending a fortune to get to a piece of land in the middle of nowhere\nKit: But the idea is amazing\nKit: is it the real Robinson Crusoe's island??\nTom: it seems it is!",
+    "output": "Tom wants to go to Robinson Crusoe's island."
+  },
+  {
+    "input": "Emely: Hey. Could u help me with one task? I have to fill in the gaps and I find it a little bit strange task\nTitus: How is that strange ?\nEmely: I have problems to so it haha. Can I send a photo of this task and then I will wrote u my answers? There are 10 sentences\nTitus: Ok I'm doing something now but I can look at it quickly if it won't take up a lot of my time\nEmely: Ok\nEmely: <file_photo>\nTitus: Can't really see that\nEmely: A) a cash cow b) hoes down the drain c) nepotism d) a golden opportunity e) a sweetheart deal f) win-win g) grease sb's palm h) a license to print money i) in full swing j) implementation\nTitus: But I cannot read it\nEmely: Really? I can see it very well on my phone\nTitus: That sounds about right\nEmely: So u can see it?\nTitus: Barely\nEmely: Oh ok",
+    "output": "Titus agrees to help Emely with a language exercise. Emely sends Titus a photo of the filled out exercise, but he has trouble reading it."
+  },
+  {
+    "input": "Aldo: Hi, did you get my email?\nMarco: Yes I did, thank you\nAldo: I hope you like my article\nAldo: It took me weeks to finish it\nMarco: Ok, I'll print it and read it right now\nAldo: Thanks\nMarco: How many pages is it?\nMarco: Ok, got it, it's 12\nAldo: Yep, 12\nMarco: Ok",
+    "output": "Marco will read Aldo's 12 page article that he spent 2 weeks writing."
+  },
+  {
+    "input": "Harris: How are U?\nLena: Fine, U?\nHarris: Been better.\nLena: ?\nHarris: My friend Aoki died yesterday.\nLena: O No!\nHarris: Yeah.\nLena: What happened?\nHarris: Not sure yet. Thinking the worst...\nLena: O how awful!\nHarris: Yes.\nLena: You just never know.\nHarris: True.\nLena: Had you seen her lately?\nHarris: Not for a few months. She lives in Michigan.\nLena: Oh, that's far.\nHarris: Not too far but far enough.\nLena: Right.\nHarris: Got to go, mom's calling.\nLena: K bi. Feel better!\nHarris: K will do",
+    "output": "Harris' friend, Aoki, who lives in Michigan, died yesterday. Harris hasn't seen her for a few months."
+  },
+  {
+    "input": "Hannah: HAPPY NEW YEAR!!! :))) \nBrooklyn: Same to you! Have you made any New Year's resolutions? ;>\nHannah: A whole list ^^\nHannah: New year, new me :D\nBrooklyn: Really? :D So how you're going to change your life this year?\nHannah: First, I'm gonna lose weight and exercise everyday (or at least 3 times a week).\nHannah: Second, I want to learn how to cook and start meal prepping\nHannah: Finally, I'm gonna find my future husband (or at least start using dating apps):D\nHannah: And you? Have you set any goals for 2019?\nBrooklyn: Hmm, interesting :D especially the last point ^^\nBrooklyn: Yeah, just one - not to make any resolutions.\nHannah: Whyyyy??\nBrooklyn: I just don't believe that a new year means a fresh start.\nBrooklyn: Every past year I told myself I would lose weight, quit smoking, start going to the gym etc. And I'm still a fatty, who smokes like a chimney and rarely leaves their couch.\nHannah: You're a little ray of sunshine, aren't you? ;)\nBrooklyn: :p And you're an undaunted optimist. What makes you believe that everything is going to change for the better?\nHannah: I don't know, I just like to think that we get numerous second chances to change our lives, to make right what's wrong.\nHannah: That's it, I don't have any better explanation.\nBrooklyn: Well, you haven't convinced me. :) Nevertheless good luck with all your resolutions. ;)\nHannah: Thanks! :*",
+    "output": "Hannah's New Year's resolutions are: work out, cook for herself, start dating. Brooklyn didn't make any. In the past she had, but she never fulfilled them. "
+  },
+  {
+    "input": "Trevor: I've got a bit of a problem, Uncle\nRichard: Have you, Trevor?\nTrevor: Yes, Uncle I need to get you advice on how to break this to Dad\nRichard: You haven't gone and got that Abigail up the duff have you?\nTrevor: That's the long and short of it, Uncle.\nRichard: Shit. How did that happen?\nTrevor: Well, it's her father's fault, Uncle.\nRichard: Her father's fault? And him a church pastor?\nTrevor: Yes, Uncle. She has sneaked me into the house really quietly and we are in her bedroom doing it.\nRichard: Fucking hell. Do go on.\nTrevor: And we haven't got any condoms so I am planning to pull out at the last moment\nRichard: Unbelieveable: Bloody idiot. What then?\nTrevor: So I am just pulling out and all of a sudden in bursts her father and delivers me such a kick up the arse that I am back in there coming.\nRichard: So you say it is all his fault, then? Incredible.\nTrevor: Yes. \nRichard: So maybe we can get him to pay the child support instead of you then, eh?",
+    "output": "Trevor got Abigail pregnant. When they were having sex without protection her father, a church pastor, kicked Trevor in the butt and Trevor came inside Abigail. "
+  },
+  {
+    "input": "Julia: I mean I like my Instagram. And my Snapchat. Oh and Twitter. And sometimes Facebook.\nGail: So do I. But this doesn't mean I'm addicted. \nJulia: Neither am I. I like looking at photos of my friends and sharing stuff with them. And I think they like it when I post stuff.\nGail: I certainly do. And I like to spy on ppl :)\nJulia: Rly?\nGail: Yeah! It's a lot of fun! Like I was spying on Em and turns out she's into some guy from work ;)\nJulia: Rly? Intriguing.\nGail: I know! :) and Jessica is thinking about going on diet.\nJulia: Wasn't she on one already?\nGail: Nah. Whenever she posts a lot of fitness-related stuff, she's just thinking about, but doing nothing rly. \nJulia: I always thought she was training day and night!\nGail: Nah. That's just how she is. The more she posts, the less she does. Like she had a phase for animal shelters. Remember?\nJulia: Yeah. She just wouldn't shut up about it. She posted every single thing she could find on the subject!\nGail: Right. And turned out that was everything she did. Never visited one. Never donated a dime. Never did anything.\nJulia: And all the time I thought she was so active and pro-active and charitable. She had me fooled ;)\nGail: U see? Spying on ppl is fun :)\nJulia: Speaking of which, did u spy on me?\nGail: No, y would I?\nJulia: It's fun?\nGail: Oh no! Don't get me wrong! We talk all the time, so no need to spy on u ;)\nJulia: Gr8.\nGail: Besides ur pretty straightforward.\nJulia: What do u mean?\nGail: When ur eating, u post food. When ur training, u post fitness materials or photos. When ur relaxing, u post a bunch of stuff.\nJulia: I know :) that's y ppl like what I do, 'caus I genuine :)\nGail: Yeah...\nJulia: What's that supposed to mean?\nGail: Hillary thinks u overdo it and have no life in real life.\nJulia: That bitch!\nGail: I know!",
+    "output": "Jessica posts a lot regarding subjects she does nothing about in reality. Julia posts in a more genuine way. But Hillary thinks she does it to death and lacks real life."
+  },
+  {
+    "input": "Anne: I hate that bitch!\nCatherine: What did she do again???\nNora: Who's the bitch?\nNora: Sorry I missed something\nCatherine: Miranda!!! \nCatherine: We all hate her\nAnne: Yesterday she called Tom, was all sweet with him you know how she can be....\nCatherine: No way she did it!! How dare she!! She knows you guys are dating.\nAnne: I think that's why she did it. She wants to take Tom away from me.\nNora: Oh, come on! She's not his type! ",
+    "output": "Miranda called Tom yesterday and spoke to him in a sweet way. Anne is angry with her because Anne is dating Tom."
+  },
+  {
+    "input": "Ella: Hey my dear family, could i ask you to confrim that youre coming and if you have any dietary requirements through this link. I need this information for the catering company. HUgs <file_other>\nBarbara: Done!!!\nEva: <3\nBarbara: I flled out for mom too\nElla: I saw that\nBarbara: (Y)",
+    "output": "Barbara and Eva described their dietary requirements in the website given by Ella."
+  },
+  {
+    "input": "Joshua: Hi sister, when will you be arriving\nSarah: i will reach New York this coming Thursday.\nJoshua: That's great. See you then.. I will be waiting for my gift\nSarah: yeah sure.. hahaha",
+    "output": "Sarah will arrive to New York on Thursday. Joshua expects to get a gift."
+  },
+  {
+    "input": "Allison: Hey girls! \nMaya: hey!\nSarah:  hey, why you so cheerful?\nAllison: Guess what!\nAllison: I've got a scholarship!\nMaya: no way! you have made it!\nSarah: shut up!\nAllison: yeee, and it is the highest posible rank i could get\nMaya: we so proud, when do we celebrate!?\nSarah: <file_gif> \nAllison: Whenever you want! thank you <3",
+    "output": "Allison has got a scholarship."
+  }
+]
