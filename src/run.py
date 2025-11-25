@@ -4,8 +4,22 @@ import yaml
 import json
 import argparse
 from pathlib import Path
-from longguide import LongGuideGenerator
+from longguide import MetricsGuidelines, OutputConstraintsGuidelines
 from standardize_data import standardize_dataset
+
+def get_task_instruction(data_path):
+    """Get dataset-specific instruction"""
+    dataset_name = Path(data_path).name
+    instructions = {
+        "SWiPE": "Simplify this text.",
+        "SAMSum": "Summarize the following dialogue.",
+        "CNN": "Summarize the following news.",
+        "xlsum": "Summarize the following document.",
+        "IWSLT": "Translate the following from English to Japanese.",
+        "CommonGen": "Generate the text from the following table.",
+        "SyntheticDialogue": "Generate the next dialogue response."
+    }
+    return instructions.get(dataset_name, "Process this text.")
 
 def get_data_path(task_type):
     """Map task type to dataset path"""
@@ -59,27 +73,55 @@ def run_longguide(config_path):
     dataset = load_dataset(data_path)
     print(f"Loaded {len(dataset)} examples from {data_path}")
     
-    # Initialize LongGuide
-    generator = LongGuideGenerator(
-        model_name=config['model_name'],
-        api_key=config['api_key'],
-        task_type=config['task_type']
-    )
+    # Initialize guidelines
+    metrics_guidelines = MetricsGuidelines()
+    constraints_guidelines = OutputConstraintsGuidelines()
+    
+    # Get task-specific guidelines
+    metrics = metrics_guidelines.get_guidelines(config['task_type'])
+    constraints = constraints_guidelines.get_guidelines(config['task_type'])
+    
+    print(f"Using guidelines for task: {config['task_type']}")
+    print(f"Metrics: {metrics}")
+    print(f"Constraints: {constraints}")
     
     # Process dataset
     results = []
     for i, item in enumerate(dataset):
         print(f"Processing example {i+1}/{len(dataset)}")
         
-        result = generator.generate(
-            input_text=item['input'],
-            target_output=item['output']
-        )
+        input_text = item['input']
+        task_instruction = get_task_instruction(data_path)
         
+        # Full attributes prompt
+        full_prompt = f"""{task_instruction} Your generated output must strictly fulfill the following task metrics. {constraints}
+
+{metrics}
+
+Input: {input_text}"""
+        
+        # Only metrics prompt  
+        only_metrics_prompt = f"""{task_instruction} Your generated output must strictly fulfill the following task metrics.
+
+{metrics}
+
+Input: {input_text}"""
+        
+        # Only constraints prompt
+        only_constraints_prompt = f"""{task_instruction} {constraints}
+
+Input: {input_text}"""
+        
+        # TODO: Replace with actual LLM calls
         results.append({
-            'input': item['input'],
+            'input': input_text,
             'target': item['output'],
-            'generated': result
+            'full_attributes_prompt': full_prompt,
+            'only_metrics_prompt': only_metrics_prompt,
+            'only_constraints_prompt': only_constraints_prompt,
+            'full_attributes': f"[Full attributes output for: {input_text[:30]}...]",
+            'only_metrics': f"[Only metrics output for: {input_text[:30]}...]", 
+            'only_constraints': f"[Only constraints output for: {input_text[:30]}...]"
         })
     
     # Save results
