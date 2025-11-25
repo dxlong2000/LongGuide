@@ -18,8 +18,9 @@ logger = logging.getLogger(__name__)
 class LLMClient:
     """Unified client for different LLM providers."""
     
-    def __init__(self, model_name: str = "gpt-3.5-turbo"):
+    def __init__(self, model_name: str = "gpt-3.5-turbo", api_key: str = None):
         self.model_name = model_name
+        self.api_key = api_key
         self.provider = self._detect_provider(model_name)
         self._setup_client()
     
@@ -35,7 +36,10 @@ class LLMClient:
     def _setup_client(self):
         """Setup client based on provider."""
         if self.provider == "openai":
-            self.client = openai.OpenAI()
+            if self.api_key:
+                self.client = openai.OpenAI(api_key=self.api_key)
+            else:
+                self.client = openai.OpenAI()
         elif self.provider == "claude":
             try:
                 session = boto3.Session()
@@ -43,7 +47,10 @@ class LLMClient:
             except Exception as e:
                 logger.warning(f"Claude setup failed: {e}, falling back to OpenAI")
                 self.provider = "openai"
-                self.client = openai.OpenAI()
+                if self.api_key:
+                    self.client = openai.OpenAI(api_key=self.api_key)
+                else:
+                    self.client = openai.OpenAI()
     
     def generate(self, prompt: str, max_tokens: int = 1024, 
                 temperature: float = 0.7, max_retries: int = 3) -> str:

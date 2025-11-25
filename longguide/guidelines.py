@@ -45,9 +45,13 @@ class MetricsGuidelines:
         "Respect of Chronology", "Non-repetitiveness", "Indicativeness", "Resolution"
     ]
     
-    def __init__(self, task_type: str):
+    def __init__(self, task_type: str, config: dict = None):
         self.task_type = task_type
-        self.llm_client = LLMClient()
+        self.config = config or {}
+        self.llm_client = LLMClient(
+            model_name=self.config.get('model_name', 'gpt-3.5-turbo'),
+            api_key=self.config.get('api_key')
+        )
     
     def generate_metrics(self, validation_data: List[Dict], 
                             batch_size: int, num_iterations: int) -> List[str]:
@@ -101,6 +105,28 @@ Output your list of metrics in JSON block including ```json and ```:
         collected_metrics = list(collected_metrics)
         collected_metrics.sort()
         return collected_metrics
+    
+    def get_guidelines(self, validation_data: List[Dict] = None, batch_size: int = 10, num_iterations: int = 3) -> str:
+        """Get metrics guidelines following the 3-step process."""
+        if not validation_data:
+            return "Focus on accuracy, clarity, and relevance for the task."
+        
+        # Step 1: Collecting metrics
+        collected_metrics = self.generate_metrics(validation_data, batch_size, num_iterations)
+        
+        # Step 2: Collecting metrics' scores
+        mc_collected_scores = self.generate_llmjudge_scores(validation_data, collected_metrics)
+        
+        # Step 3: Collecting the metrics' definitions
+        metrics_string = ", ".join(list(collected_metrics))
+        collecting_definitions_prompt = f"""Now you are given the following metrics: {metrics_string} for the {self.task_type} task.
+Based on these scores on a scale of 5 for the quality of a generated text: {str(mc_collected_scores)}, define the expected quality of the generated text for each metric in natural language. Give me the list in bullet points."""
+        
+        raw_metrics_definitions = self.llm_client.generate(collecting_definitions_prompt, max_tokens=1024)
+        if "\n\n" in raw_metrics_definitions:
+            raw_metrics_definitions = raw_metrics_definitions.split("\n\n")[1].strip()
+        
+        return raw_metrics_definitions
     
     def generate_llmjudge_scores(self, validation_data: List[Dict], collected_metrics: List[str]) -> Dict[str, float]:
         """
@@ -171,45 +197,17 @@ Give me the list in bullet points.
 """
         return self.llm_client.generate(input_prompt, max_tokens=1024)
     
-    def generate_metric_guidelines(self, validation_data: List[Dict], batch_size: int, num_iterations: int) -> Tuple[str, List[str], Dict[str, float]]:
-        """
-        Generate complete metric guidelines including definitions and scores.
-        
-        Args:
-            validation_data: Validation dataset
-            batch_size: Number of examples per iteration
-            num_iterations: Number of iterations
-            
-        Returns:
-            Tuple of (definitions, metrics_list, scores_dict)
-        """
-        # Step 1: Collecting metrics
-        collected_metrics = self.generate_metrics(validation_data, batch_size, num_iterations)
-        print("Getting task metrics: Finish step 1, collecting metrics.")
-        print(f"Collected metrics: {str(collected_metrics)}")
-        
-        # Step 2: Collecting metrics' scores
-        mc_collected_scores = self.generate_llmjudge_scores(validation_data, collected_metrics)
-        print("Getting task metrics: Finish step 2, collecting metrics' scores.")
-        
-        # Step 3: Collecting the metrics' definitions
-        metrics_string = ", ".join(collected_metrics)
-        collecting_definitions_prompt = f"""Now you are given the following metrics: {metrics_string} for the {self.task_type} task.
-Based on these scores on a scale of 5 for the quality of a simplified text: {str(mc_collected_scores)}, define the expected quality of the generated simplified text for each metric in natural language. Give me the list in bullet points."""
-        
-        raw_metrics_definitions = self.llm_client.generate(collecting_definitions_prompt, max_tokens=1024)
-        if "\n\n" in raw_metrics_definitions: 
-            raw_metrics_definitions = raw_metrics_definitions.split("\n\n")[1].strip()
-        
-        return raw_metrics_definitions, collected_metrics, mc_collected_scores
-
 
 class OutputConstraintsGuidelines:
     """Generates output constraints and guidelines for LongGuide."""
     
-    def __init__(self, task_type: str):
+    def __init__(self, task_type: str, config: dict = None):
         self.task_type = task_type
-        self.llm_client = LLMClient()
+        self.config = config or {}
+        self.llm_client = LLMClient(
+            model_name=self.config.get('model_name', 'gpt-3.5-turbo'),
+            api_key=self.config.get('api_key')
+        )
     
     def count_sentences(self, text: str) -> int:
         return len(sent_tokenize(text))
@@ -246,7 +244,7 @@ class OutputConstraintsGuidelines:
         sentence_cnt = 0
         
         for dt in validation_data:
-            content = dt.get("reference", dt.get("s_content", ""))
+            content = dt["output"]
             word_cnt += self.count_words(content)
             verb_cnt += self.count_verbs(content)
             noun_cnt += self.count_nouns(content)
@@ -274,7 +272,7 @@ class OutputConstraintsGuidelines:
         token_counts = []
         
         for dt in validation_data:
-            content = dt.get("reference", dt.get("s_content", ""))
+            content = dt["output"]
             sentence_counts.append(self.count_sentences(content))
             token_counts.append(self.count_words(content))
         
@@ -290,6 +288,17 @@ class OutputConstraintsGuidelines:
                 "avg": sum(token_counts) / len(token_counts)
             }
         }
+    
+    def get_guidelines(self, validation_data: List[Dict] = None) -> str:
+        """Get output constraint guidelines."""
+        if not validation_data:
+            return "Your response should be well-structured and appropriate for the task."
+        
+        # Step 1: Get statistics
+        constraints = self.generate_output_constraints(validation_data)
+        
+        # Step 2: Format it
+        return self.format_ocg_constraints(constraints)
     
     def format_ocg_constraints(self, constraints: Dict[str, Any]) -> str:
         """

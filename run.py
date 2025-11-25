@@ -54,13 +54,10 @@ def load_dataset(data_path):
     with open(temp_file, 'w') as f:
         json.dump(data, f)
     
-    standardize_dataset(dataset_name, temp_file)
-    
-    with open(temp_file, 'r') as f:
-        data = json.load(f)
+    standardized_data = standardize_dataset(dataset_name, temp_file)
     
     Path(temp_file).unlink()
-    return data
+    return standardized_data
 
 def run_longguide(config_path):
     """Run LongGuide with specified configuration"""
@@ -73,13 +70,13 @@ def run_longguide(config_path):
     dataset = load_dataset(data_path)
     print(f"Loaded {len(dataset)} examples from {data_path}")
     
-    # Initialize guidelines
-    metrics_guidelines = MetricsGuidelines()
-    constraints_guidelines = OutputConstraintsGuidelines()
+    # Initialize guidelines with task type and config
+    metrics_guidelines = MetricsGuidelines(config['task_type'], config)
+    constraints_guidelines = OutputConstraintsGuidelines(config['task_type'], config)
     
     # Get task-specific guidelines
-    metrics = metrics_guidelines.get_guidelines(config['task_type'])
-    constraints = constraints_guidelines.get_guidelines(config['task_type'])
+    metrics = metrics_guidelines.get_guidelines()
+    constraints = constraints_guidelines.get_guidelines(dataset[:10])  # Test with first 10 examples
     
     print(f"Using guidelines for task: {config['task_type']}")
     print(f"Metrics: {metrics}")

@@ -7,24 +7,12 @@ import os
 from pathlib import Path
 
 def standardize_samsum(data):
-    """Convert SAMSum format: dialogue -> input, summary -> output"""
-    standardized = []
-    for item in data:
-        standardized.append({
-            "input": item["dialogue"],
-            "output": item["summary"]
-        })
-    return standardized
+    """Convert SAMSum format: already has input/output format"""
+    return data
 
 def standardize_cnn(data):
-    """Convert CNN format: article -> input, highlights -> output"""
-    standardized = []
-    for item in data:
-        standardized.append({
-            "input": item["article"],
-            "output": item["highlights"]
-        })
-    return standardized
+    """Convert CNN format: already has input/output format"""
+    return data
 
 def standardize_xlsum(data):
     """Convert XLSUM format: text -> input, target -> output"""
@@ -69,17 +57,17 @@ def standardize_commongen(data):
     return standardized
 
 def standardize_synthetic_dialogue(data):
-    """Convert SyntheticDialogue format: context -> input, response -> output"""
+    """Convert SyntheticDialogue format: Input -> input, Output -> output"""
     standardized = []
     for item in data:
         standardized.append({
-            "input": item.get("context", item.get("prompt", "")),
-            "output": item.get("response", item.get("dialogue", ""))
+            "input": item.get("Input", item.get("context", item.get("prompt", ""))),
+            "output": item.get("Output", item.get("response", item.get("dialogue", "")))
         })
     return standardized
 
 def standardize_dataset(dataset_name, file_path):
-    """Standardize a dataset file"""
+    """Standardize a dataset file and return the standardized data"""
     print(f"Processing {dataset_name}: {file_path}")
     
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -101,13 +89,10 @@ def standardize_dataset(dataset_name, file_path):
         standardized = standardize_synthetic_dialogue(data)
     else:
         print(f"Unknown dataset: {dataset_name}")
-        return
-    
-    # Write back to file
-    with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(standardized, f, indent=2, ensure_ascii=False)
+        return None
     
     print(f"Standardized {len(standardized)} examples for {dataset_name}")
+    return standardized
 
 def main():
     """Main function to standardize all datasets"""
