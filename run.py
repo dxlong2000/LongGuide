@@ -5,6 +5,7 @@ import json
 import argparse
 from pathlib import Path
 from longguide import MetricsGuidelines, OutputConstraintsGuidelines
+from longguide.llm_client import LLMClient
 from standardize_data import standardize_dataset
 
 def get_task_instruction(data_path):
@@ -74,6 +75,9 @@ def run_longguide(config_path):
     metrics_guidelines = MetricsGuidelines(config['task_type'], config)
     constraints_guidelines = OutputConstraintsGuidelines(config['task_type'], config)
     
+    # Initialize LLM client for generation
+    llm_client = LLMClient(config['model_name'], config['api_key'])
+    
     # Get task-specific guidelines
     metrics = metrics_guidelines.get_guidelines()
     constraints = constraints_guidelines.get_guidelines(dataset[:10])  # Test with first 10 examples
@@ -109,16 +113,20 @@ Input: {input_text}"""
 
 Input: {input_text}"""
         
-        # TODO: Replace with actual LLM calls
+        # Generate outputs using LLM
+        full_attributes_output = llm_client.generate(full_prompt)
+        only_metrics_output = llm_client.generate(only_metrics_prompt)
+        only_constraints_output = llm_client.generate(only_constraints_prompt)
+        
         results.append({
             'input': input_text,
             'target': item['output'],
             'full_attributes_prompt': full_prompt,
             'only_metrics_prompt': only_metrics_prompt,
             'only_constraints_prompt': only_constraints_prompt,
-            'full_attributes': f"[Full attributes output for: {input_text[:30]}...]",
-            'only_metrics': f"[Only metrics output for: {input_text[:30]}...]", 
-            'only_constraints': f"[Only constraints output for: {input_text[:30]}...]"
+            'full_attributes': full_attributes_output,
+            'only_metrics': only_metrics_output,
+            'only_constraints': only_constraints_output
         })
     
     # Save results
